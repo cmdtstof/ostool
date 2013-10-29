@@ -7,7 +7,7 @@
  * @since 2012-04-11
  */
 //header('Content-type: text/html;charset=iso-8859-1');
-$host = "s15.app100658054.qqopenapp.com";
+$host = "s11.app100658054.qqopenapp.com";
 $port = 8004;
 
 function gm_addCard($name,$prop,$n,$rem){
@@ -39,12 +39,9 @@ function gm_addCard($name,$prop,$n,$rem){
 	$msg1 = "h#d{\"message\":\"".$message1."\",\"ts\":\"".$ts."\",\"sign\":\"".$s."\"}t#l";
 
 	$r1 =$msg.$msg1;
-	echo"<br/>";
 	socket_write($socket,$r1) or die("Write failed\n"); // 数据传送 向服务器发送消息
 	$count=0;
 	$result = "";
-	echo $r1;
-	echo"<br/>";
 	while (false !=socket_recv($socket,$buff,150,MSG_WAITALL)) {
 		$result = $result.$buff;
 		if(strlen($result)>3){
@@ -58,7 +55,6 @@ function gm_addCard($name,$prop,$n,$rem){
 		}
 		break;
 	}
-	echo $result;
 	socket_close($socket);
 
 }
@@ -94,12 +90,9 @@ function gm_addScore($name,$n,$rem){
 
 	$r1 =$msg.$msg1;
 
-	echo"<br/>";
 	socket_write($socket,$r1) or die("Write failed\n"); // 数据传送 向服务器发送消息
 	$count=0;
 	$result = "";
-	echo $r1;
-	echo"<br/>";
 	while (false !=socket_recv($socket,$buff,100,MSG_WAITALL)) {
 		$result = $result.$buff;
 		if(strlen($result)>3 && strlen($result)==100){
@@ -115,7 +108,6 @@ function gm_addScore($name,$n,$rem){
 			break;
 		}
 	}
-	echo $result;
 	socket_close($socket);
 }
 
@@ -174,7 +166,9 @@ function gm_addItem($name,$prop,$n,$rem){
 }
 //gm_addScore("GMT",2000000,"测试");
 function  getFileData($filename,$cmd){
-	$fp=fopen("upload/".$file_name,'r');
+	$fp=fopen("upload/".$filename,'r');
+	$filenametemp = substr($filename, 0,strpos($filename, "."));
+	//echo $filenametemp;
 	while(!feof($fp))
 	{
 		$buffer=fgets($fp);
@@ -186,11 +180,11 @@ function  getFileData($filename,$cmd){
 			$num=$a[2];
 			$remark=$a[3];
 			if($cmd=="1"){ // 积分
-				gm_addScore($rolename,$num,$remark."_".$filename);
+				gm_addScore($rolename,$num,$remark."_".$filenametemp);
 			}else if($cmd=="2"){// 卡牌
-				gm_addCard($rolename,$prop,$num,$remark."_".$filename);
+				gm_addCard($rolename,$prop,$num,$remark."_".$filenametemp);
 			}else if($cmd=="3"){// 物品
-				gm_addItem($rolename,$prop,$num,$remark."_".$filename);
+				gm_addItem($rolename,$prop,$num,$remark."_".$filenametemp);
 			}else{
 			}
 		}
@@ -203,6 +197,7 @@ function  getFileData($filename,$cmd){
 
 function  getFileData2($filename,$cmd){
 	// 从表中提取信息的sql语句
+	$filenametemp = substr($filename, 0,strpos($filename, "."));
 	require '../utils/dbOstoolUtils.php';
 	$strsql="SELECT rolename,propsId,num,remark from buchang where filename like '%".$filename."%'";
 	// 执行sql查询
@@ -215,11 +210,11 @@ function  getFileData2($filename,$cmd){
 		while ($row=mysql_fetch_row($result))
 		{
 			if($cmd=="1"){ // 积分
-				gm_addScore($row[0],$row[2],$row[3]."_".$filename);
+				gm_addScore($row[0],$row[2],$row[3]."_".$filenametemp);
 			}else if($cmd=="2"){// 卡牌
-				gm_addCard($row[0],$row[1],$row[2],$row[3]."_".$filename);
+				gm_addCard($row[0],$row[1],$row[2],$row[3]."_".$filenametemp);
 			}else if($cmd=="3"){// 物品
-				gm_addItem($row[0],$row[1],$row[2],$row[3]."_".$filename);
+				gm_addItem($row[0],$row[1],$row[2],$row[3]."_".$filenametemp);
 			}else{
 			}
 		}

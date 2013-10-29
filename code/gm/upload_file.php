@@ -1,3 +1,6 @@
+<script type="text/javascript" src = "../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src = "../js/common.js"></script>
+
 <?php
 //echo $_FILES["file"]["type"];
 $checkFileName = "";
@@ -30,7 +33,7 @@ if ((($_FILES["file"]["type"] == "text/plain"))
       "upload/" . $checkFileName);
 			echo "文件上传成功,以下为文件内容<br/>";
 			//echo "Stored in: " . "upload/" . $_FILES["file"]["name"]."<br/>";
-	  	//readTxt("upload/" . $checkFileName);
+	  	insertfile($checkFileName);
 
 		}
 	}
@@ -74,6 +77,32 @@ function readTxt($file_name){
 	fclose($fp);
 }
 
+function insertfile($filename){
+	//$rolename = iconv('gb2312','utf-8',$rolename);
+	//echo $prop;
+	//echo $num;
+	//echo $remark."<br/>";
+	$fp=fopen("upload/".$filename,'r');
+	$cou = 0;
+	while(!feof($fp))
+	{
+		$buffer=fgets($fp);
+		
+		if(strlen($buffer)>0){
+			$cou++;
+		}
+	}
+	require '../utils/dbOstoolUtils.php';
+	$server =$_SERVER['SERVER_NAME'];
+	$logsql = "INSERT INTO buchang (filename,type,op,isDeal,server,num) VALUES ('$filename','','',0,'$server','$cou');";
+	$result=mysql_query($logsql, $osconn)  or  die("Unable to connect");
+	// 释放资源
+	//mysql_free_result($result);
+	// 关闭连接
+	mysql_close($osconn) or die("Unable to close connect");;
+	return true;
+}
+
 function insertbc($rolename,$prop,$num,$remark,$filename){
 	//$rolename = iconv('gb2312','utf-8',$rolename);
 	//echo $prop;
@@ -81,7 +110,7 @@ function insertbc($rolename,$prop,$num,$remark,$filename){
 	//echo $remark."<br/>";
 	require '../utils/dbOstoolUtils.php';
 	$server =$_SERVER['SERVER_NAME'];
-	$logsql = "INSERT INTO buchang (rolename,propsId,num,remark,filename,type,op,isDeal,server) VALUES ('".$rolename."','.$prop.','.$num.','.$remark.','.$filename.','','',0,'.$server.');";
+	$logsql = "INSERT INTO buchang (rolename,propsId,num,remark,filename,type,op,isDeal,server) VALUES ('$rolename','$prop','$num','$remark','$filename','','',0,'$server');";
 		echo $logsql."<br/>";
 	$result=mysql_query($logsql, $osconn)  or  die("Unable to connect");
 	// 释放资源
@@ -103,14 +132,43 @@ function insertbc($rolename,$prop,$num,$remark,$filename){
 <option value="3">添加物品</option>
 </select>
 <input type="button" onclick="sendProps('<?php echo $checkFileName ?>')" value="发送"/>
+<div id="dnshow1" style="display:none;width:100%;height:100%;background-color:#E6EAE9;position:absolute;top:0px;z-index:100;filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;" >
 
+</div>
+<div id="dnshow2" style="display:none;width:200px;height:145px;background:url(../img/loading44.gif) ;position:absolute;left:40%; Top:40%; z-index:101;text-align:center;" >
+</div>
 <script type="text/javascript">
 function sendProps(filename){
 	var cmd =document.getElementById("cmdselect").value;
 	if(cmd==""){
-		 alert("请选择要执行的命令");
+		
+		alert("请选择要执行的命令");
 	}else{
-		this.location = "sendProps.php?filename="+filename+"&cmd="+cmd;
+		//this.location = "sendProps.php?filename="+filename+"&cmd="+cmd;
+		document.getElementById("dnshow1").style.display="";
+		document.getElementById("dnshow2").style.display="";
+		$.ajax({
+			type:'GET',
+			url:"sendProps.php?filename="+filename+"&cmd="+cmd,
+			data:{},
+			timeout:1000000,
+			error:function (data){
+				document.getElementById("dnshow1").style.display="none";
+				document.getElementById("dnshow2").style.display="none";		
+				alert("系统繁忙，请稍后再试");
+				},
+			success:function(result){
+				document.getElementById("dnshow1").style.display="none";
+				document.getElementById("dnshow2").style.display="none";
+				alert("上传结束");
+				window.location.href =  "sendPropsIndex.php";
+					
+			}
+			
+		});
 	}
 }
 

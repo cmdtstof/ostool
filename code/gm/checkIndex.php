@@ -3,7 +3,8 @@
 header('Content-type: text/html;charset=gbk');
 require '../utils/dbOstoolUtils.php';
 $server =$_SERVER['SERVER_NAME'];
-$strsql="SELECT filename,server from buchang where server = '".$server."'group by filename ";
+// where server = '".$server."'
+$strsql="SELECT filename,server from buchang  where server = '".$server."' group by filename order by filename desc";
 // 执行sql查询
 $result=mysql_query($strsql, $osconn);
 // 获取查询结果
@@ -18,8 +19,8 @@ if(mysql_num_rows($result)>0){
 	// 循环取出记录
 	while ($row=mysql_fetch_row($result))
 	{
-		$temp = substr($row[0],strpos($row[0], "/")+1,strlen($row[0]));
-		$showtable = $showtable."<tr><td><input type='radio' name='radiogroup' value='".$temp."'/></td><td>".$temp."</td><td>".$row[1]."</td></tr>";
+		//$temp = substr($row[0],strpos($row[0], "/")+1,strlen($row[0]));
+		$showtable = $showtable."<tr><td><input type='radio' name='radiogroup' value='".$row[0]."'/></td><td>".$row[0]."</td><td>".$row[1]."</td></tr>";
 	}
 	$showtable = $showtable."</table>";
 	echo $showtable;
