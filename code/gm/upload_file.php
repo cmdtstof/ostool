@@ -80,7 +80,8 @@ function insertbc($rolename,$prop,$num,$remark,$filename){
 	//echo $num;
 	//echo $remark."<br/>";
 	require '../utils/dbOstoolUtils.php';
-	$logsql = "INSERT INTO buchang (rolename,propsId,num,remark,filename,type,op,isDeal) VALUES ('".$rolename."','$prop','$num','$remark','$filename','','',0);";
+	$server =$_SERVER['SERVER_NAME'];
+	$logsql = "INSERT INTO buchang (rolename,propsId,num,remark,filename,type,op,isDeal,server) VALUES ('".$rolename."','.$prop.','.$num.','.$remark.','.$filename.','','',0,'.$server.');";
 	//	echo $logsql."<br/>";
 	$result=mysql_query($logsql, $osconn)  or  die("Unable to connect");
 	// 释放资源
@@ -105,7 +106,6 @@ function insertbc($rolename,$prop,$num,$remark,$filename){
 
 <script type="text/javascript">
 function sendProps(filename){
-	alert(filename);
 	var cmd =document.getElementById("cmdselect").value;
 	if(cmd==""){
 		 alert("请选择要执行的命令");

@@ -1,5 +1,6 @@
 <link type="text/css" rel="stylesheet" href="../css/common.css" />
 <?php
+header('Content-type: text/html;charset=gbk');
 require '../utils/dbOstoolUtils.php';
 $strsql="SELECT filename from buchang group by filename ";
 // Ö´ÐÐsql²éÑ¯
@@ -41,7 +42,6 @@ function checkfile(){
             break;
         }
     }
-    alert(chk);
     if(chk!=-1){
     	this.location = "checkResult.php?filename="+chkObjs[chk].value;
     }else{

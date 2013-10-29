@@ -3,6 +3,7 @@
 
 <?php
 require '../common/userinfo.php';
+header('Content-type: text/html;charset=gbk');
 if($_COOKIE["username"]==$os_user_name){ ?>
 <form action="upload_file.php" method="post"
 	enctype="multipart/form-data"><label for="file">请选择要上传的文件（txt格式）:</label>

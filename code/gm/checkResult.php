@@ -1,5 +1,6 @@
 <link type="text/css" rel="stylesheet" href="../css/common.css" />
 <?php
+header('Content-type: text/html;charset=gbk');
 function checkResult() {
 	
 	if(isset($_GET["filename"]))
@@ -13,17 +14,18 @@ function checkResult() {
 		$result=mysql_query($strsql, $tcglogconn);
 		// 获取查询结果
 		$showtable="<table id='tab1' class='simpleList' border='1' cellspacing='0' cellpadding='5' rules='rows' ><tr>";
-		$showtable = $showtable."<th>时间</th><th>GM</th><th>动作</th><th>玩家</th><th>备注</th>";
+		$showtable = $showtable."<th>序号</th><th>时间</th><th>GM</th><th>动作</th><th>玩家</th><th>备注</th>";
 		$showtable = $showtable."</tr>";
 
 		if(mysql_num_rows($result)>0){
 			// 定位到第一条记录
 			mysql_data_seek($result, 0);
 			// 循环取出记录
+			$count=0;
 			while ($row=mysql_fetch_row($result))
 			{
-
-				$showtable = $showtable."<tr>";
+				$count++;
+				$showtable = $showtable."<tr><td>".$count."</td>";
 				for ($i=0; $i<mysql_num_fields($result); $i++ )
 				{
 					if($row[$i]=="add_card_to_user"){

@@ -7,7 +7,7 @@
  * @since 2012-04-11
  */
 
-//header('Content-type: text/html;charset=iso-8859-1');
+header('Content-type: text/html;charset=gbk');
 if(isset($_GET["openID"]) && isset($_GET["roleName"])){
 	
 	set_time_limit(10);
