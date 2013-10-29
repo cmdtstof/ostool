@@ -82,7 +82,7 @@ function insertbc($rolename,$prop,$num,$remark,$filename){
 	require '../utils/dbOstoolUtils.php';
 	$server =$_SERVER['SERVER_NAME'];
 	$logsql = "INSERT INTO buchang (rolename,propsId,num,remark,filename,type,op,isDeal,server) VALUES ('".$rolename."','.$prop.','.$num.','.$remark.','.$filename.','','',0,'.$server.');";
-	//	echo $logsql."<br/>";
+		echo $logsql."<br/>";
 	$result=mysql_query($logsql, $osconn)  or  die("Unable to connect");
 	// ÊÍ·Å×ÊÔ´
 	//mysql_free_result($result);
