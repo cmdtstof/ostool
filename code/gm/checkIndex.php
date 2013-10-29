@@ -2,12 +2,14 @@
 <?php
 header('Content-type: text/html;charset=gbk');
 require '../utils/dbOstoolUtils.php';
-$strsql="SELECT filename from buchang group by filename ";
+$server =$_SERVER['SERVER_NAME'];
+$strsql="SELECT filename,server from buchang where server = '".$server."'group by filename ";
 // 执行sql查询
 $result=mysql_query($strsql, $osconn);
 // 获取查询结果
+
 $showtable="<table id='tab1' class='simpleList' border='1' cellspacing='0' cellpadding='5' rules='rows' ><tr>";
-$showtable = $showtable."<th></th><th>文件名</th>";
+$showtable = $showtable."<th></th><th>文件名</th><th>服务器</th>";
 $showtable = $showtable."</tr>";
 
 if(mysql_num_rows($result)>0){
@@ -17,7 +19,7 @@ if(mysql_num_rows($result)>0){
 	while ($row=mysql_fetch_row($result))
 	{
 		$temp = substr($row[0],strpos($row[0], "/")+1,strlen($row[0]));
-		$showtable = $showtable."<tr><td><input type='radio' name='radiogroup' value='".$temp."'/></td><td>".$temp."</td></tr>";
+		$showtable = $showtable."<tr><td><input type='radio' name='radiogroup' value='".$temp."'/></td><td>".$temp."</td><td>".$row[1]."</td></tr>";
 	}
 	$showtable = $showtable."</table>";
 	echo $showtable;

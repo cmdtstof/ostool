@@ -174,6 +174,34 @@ function gm_addItem($name,$prop,$n,$rem){
 }
 //gm_addScore("GMT",2000000,"测试");
 function  getFileData($filename,$cmd){
+	$fp=fopen("upload/".$file_name,'r');
+	while(!feof($fp))
+	{
+		$buffer=fgets($fp);
+		if(strlen($buffer)>0){
+			$buffer  = substr($buffer,0,strpos($buffer, ";"));
+			$a = explode(',',$buffer);
+			$rolename=$a[0];
+			$prop=$a[1];
+			$num=$a[2];
+			$remark=$a[3];
+			if($cmd=="1"){ // 积分
+				gm_addScore($rolename,$num,$remark."_".$filename);
+			}else if($cmd=="2"){// 卡牌
+				gm_addCard($rolename,$prop,$num,$remark."_".$filename);
+			}else if($cmd=="3"){// 物品
+				gm_addItem($rolename,$prop,$num,$remark."_".$filename);
+			}else{
+			}
+		}
+	}
+	fclose($fp);
+	// 从表中提取信息的sql语句
+	echo "发送结束。上传文件名为：".$filename."<br/>由于网络等因素，请稍后核对补发结果";
+}
+
+
+function  getFileData2($filename,$cmd){
 	// 从表中提取信息的sql语句
 	require '../utils/dbOstoolUtils.php';
 	$strsql="SELECT rolename,propsId,num,remark from buchang where filename like '%".$filename."%'";

@@ -30,7 +30,7 @@ if ((($_FILES["file"]["type"] == "text/plain"))
       "upload/" . $checkFileName);
 			echo "文件上传成功,以下为文件内容<br/>";
 			//echo "Stored in: " . "upload/" . $_FILES["file"]["name"]."<br/>";
-	  readTxt("upload/" . $checkFileName);
+	  	//readTxt("upload/" . $checkFileName);
 
 		}
 	}
