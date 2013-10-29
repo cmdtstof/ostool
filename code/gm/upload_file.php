@@ -105,11 +105,12 @@ function insertbc($rolename,$prop,$num,$remark,$filename){
 
 <script type="text/javascript">
 function sendProps(filename){
+	alert(filename);
 	var cmd =document.getElementById("cmdselect").value;
 	if(cmd==""){
 		 alert("请选择要执行的命令");
 	}else{
-		this.location = "checkResult.php?action=ok$filename="+filename+"&cmd="+cmd;
+		this.location = "sendProps.php?filename="+filename+"&cmd="+cmd;
 	}
 }
 

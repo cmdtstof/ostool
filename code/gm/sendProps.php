@@ -7,16 +7,18 @@
  * @since 2012-04-11
  */
 //header('Content-type: text/html;charset=iso-8859-1');
-$host = "s11.app100658054.qqopenapp.com";
+$host = "s15.app100658054.qqopenapp.com";
 $port = 8004;
 
-function gm_addCard(){
+function gm_addCard($name,$prop,$n,$rem){
 	set_time_limit(10);
+	global $host;
+	global $port;
 	$openID = "9613523E247BD5BAD73C075EEC5FA2EE";
-	$roleName = mb_convert_encoding("果汁分你一半","utf-8","GBK");
-	$cardId = 44;
-	$cardNum = 1;
-	$remark = mb_convert_encoding("测试","utf-8","GBK");
+	$roleName = mb_convert_encoding($name,"utf-8","GBK");
+	$cardId = $prop;
+	$cardNum = $n;
+	$remark = mb_convert_encoding($rem,"utf-8","GBK");
 
 	$socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP)or die("Could not create  socket\n"); // 创建一个Socket
 	$connection = socket_connect($socket, $host, $port) or die("Could not connet server\n");    //  连接
@@ -63,8 +65,8 @@ function gm_addCard(){
 
 function gm_addScore($name,$n,$rem){
 	set_time_limit(10);
-	$host = "s11.app100658054.qqopenapp.com";
-	$port = 8004;
+	global $host;
+	global $port;
 	$openID = "9613523E247BD5BAD73C075EEC5FA2EE";
 	$roleName = mb_convert_encoding($name,"utf-8","GBK");
 	$score = $n;
@@ -120,8 +122,8 @@ function gm_addScore($name,$n,$rem){
 
 function gm_addItem($name,$prop,$n,$rem){
 	set_time_limit(10);
-	$host = "s11.app100658054.qqopenapp.com";
-	$port = 8004;
+	global $host;
+	global $port;
 	$openID = "9613523E247BD5BAD73C075EEC5FA2EE";
 	$roleName = mb_convert_encoding($name,"utf-8","GBK");
 	$itemId = $prop;
@@ -150,12 +152,9 @@ function gm_addItem($name,$prop,$n,$rem){
 
 	$r1 =$msg.$msg1;
 
-	echo"<br/>";
 	socket_write($socket,$r1) or die("Write failed\n"); // 数据传送 向服务器发送消息
 	$count=0;
 	$result = "";
-	echo $r1;
-	echo"<br/>";
 	while (false !=socket_recv($socket,$buff,100,MSG_WAITALL)) {
 		$result = $result.$buff;
 		if(strlen($result)>3 && strlen($result)==100){
@@ -171,18 +170,13 @@ function gm_addItem($name,$prop,$n,$rem){
 			break;
 		}
 	}
-	echo $result;
 	socket_close($socket);
 }
 //gm_addScore("GMT",2000000,"测试");
 function  getFileData($filename,$cmd){
-
 	// 从表中提取信息的sql语句
 	require '../utils/dbOstoolUtils.php';
 	$strsql="SELECT rolename,propsId,num,remark from buchang where filename like '%".$filename."%'";
-
-
-	//echo $strsql;
 	// 执行sql查询
 	$result=mysql_query($strsql, $osconn);
 	// 获取查询结果
@@ -206,12 +200,20 @@ function  getFileData($filename,$cmd){
 	mysql_free_result($result);
 	// 关闭连接
 	mysql_close($osconn);
+
+	echo "发送结束。上传文件名为：".$filename."<br/>由于网络等因素，请稍后核对补发结果";
 }
-//
+
 function getMillisecond() {
 	list($s1, $s2) = explode(' ', microtime());
 	return (float)sprintf('%.0f', (floatval($s1) + floatval($s2)) * 1000);
 }
 
+if(isset($_GET["filename"]) && isset($_GET["cmd"]))
+{
+	$filename = $_GET["filename"];
+	$cmd = $_GET["cmd"];
+	getFileData($filename,$cmd);
+}
 
 ?>

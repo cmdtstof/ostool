@@ -81,8 +81,9 @@ require 'userinfo.php';
 if($_COOKIE["username"]==$os_user_name){ ?>
 <ul><a href="#" onClick="showDiv('gmDiv');">GM功能</a>
 <div id="gmDiv" style="display:none;">
-<li><a style="text-decoration:none;color:#4c4c4c;" href="../gm/s.php" target="mainFrame">角色核对</a></li>
-<li><a style="text-decoration:none;color:#4c4c4c;" href="../gm/index.php" target="mainFrame">道具补发</a></li>
+<li><a style="text-decoration:none;color:#4c4c4c;" href="../gm/roleCheckIndex.php" target="mainFrame">角色核对</a></li>
+<li><a style="text-decoration:none;color:#4c4c4c;" href="../gm/sendPropsIndex.php" target="mainFrame">道具补发</a></li>
+<li><a style="text-decoration:none;color:#4c4c4c;" href="../gm/checkIndex.php" target="mainFrame">补发核实</a></li>
 </div>
 </ul>
 <?php }?>

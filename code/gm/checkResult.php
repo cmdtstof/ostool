@@ -1,22 +1,14 @@
 <link type="text/css" rel="stylesheet" href="../css/common.css" />
 <?php
-
-require 'sendProps.php';
 function checkResult() {
-	require '../utils/dbTcgLogUtils.php';
-	require '../utils/iniUtils.php';
-
-	if(isset($_GET["filename"]) && isset($_GET["cmd"]))
+	
+	if(isset($_GET["filename"]))
 	{
 		$filename = $_GET["filename"];
-		$cmd = $_GET["cmd"];
-		echo $filename;
-		getFileData($filename,$cmd);
-	 // 从表中提取信息的sql语句
+		require '../utils/dbTcgLogUtils.php';
+		 // 从表中提取信息的sql语句
 		$strsql="SELECT update_time,name,action,target,memo from gm_log where name='GMT' and memo like '%".$filename."%'";
 
-
-		//echo $strsql;
 		// 执行sql查询
 		$result=mysql_query($strsql, $tcglogconn);
 		// 获取查询结果
@@ -43,7 +35,7 @@ function checkResult() {
 					}else {
 						$showtable = $showtable."<td>".$row[$i]."</td>";
 					}
-						
+
 				}
 				$showtable = $showtable."</tr>";
 			}
