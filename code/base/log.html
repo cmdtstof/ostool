@@ -1,0 +1,5198 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!--  		@page { margin: 2cm }  		P { margin-bottom: 0.21cm }  		H4 { margin-bottom: 0.21cm }  		H4.western { font-family: "Times New Roman", serif }  		H4.cjk { font-family: "MS PMincho"; font-style: normal }  		H4.ctl { font-family: "Tahoma" }  		H3 { margin-bottom: 0.21cm }  		H3.western { font-family: "Times New Roman", serif }  		H3.cjk { font-family: "MS PMincho"; font-style: normal }  		H3.ctl { font-family: "Tahoma" }  		TD P { margin-bottom: 0cm }  		TH P { margin-bottom: 0cm }  		A:link { so-language: zxx }  	-->
+<BODY DIR="LTR">
+<ul>
+  <li>
+    <p><a href="#">概要</a> </p>
+  </li>
+  <li>
+    <p><a href="#">规范与说明</a> </p>
+    <ul>
+      <li><a href="#achievementlog成就日志">achievement_log</a><a href="#achievementlog成就日志">成就日志</a></li>
+      <li><p><a href="#applylog物品消耗日志">apply_log</a><a href="#applylog物品消耗日志">物品消耗日志</a> </p></li>
+      <li>
+        <p><a href="#auctionlog拍卖行日志">auction_log</a><a href="#auctionlog拍卖行日志">拍卖行日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#blocklog玩家受处罚日志（还未完成）">block_log</a><a href="#blocklog玩家受处罚日志（还未完成）">玩家受处罚日志（  		还未完成）</a> </p>
+      </li>
+      <li>
+        <p><a href="#bonuslog奖励日志">bonus_log</a><a href="#bonuslog奖励日志">奖励日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#cardlog卡牌日志">card_log</a><a href="#cardlog卡牌日志">卡牌日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#cardsmeltlog熔炼卡牌日志">card_smelt_log</a><a href="#cardsmeltlog熔炼卡牌日志">熔炼卡牌日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#chatlog聊天日志">chat_log</a><a href="#chatlog聊天日志">聊天日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#competitionlog竞赛日志">competition_log</a><a href="#competitionlog竞赛日志">竞赛日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#costlog道具消费日志">cost_log</a><a href="#costlog道具消费日志">道具消费日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#duellog对战日志">duel_log</a><a href="#duellog对战日志">对战日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#duellevellog战绩日志">duel_level_log</a><a href="#duellevellog战绩日志">战绩日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#friendlog好友操作日志">friend_log</a><a href="#friendlog好友操作日志">好友操作日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#GMlog操作日志">GM_log</a><a href="#GMlog操作日志">操作日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#groupcardlog卡组日志">groupcard_log</a><a href="#groupcardlog卡组日志">卡组日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#gslog服务器日志">gs_log</a><a href="#gslog服务器日志">服务器日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#guidelog战役日志">guide_log</a><a href="#guidelog战役日志">战役日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#invitelog邀请好友日志">invite_log</a><a href="#invitelog邀请好友日志">邀请好友日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#itemlog物品日志">item_log</a><a href="#itemlog物品日志">物品日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#leveluplog升级日志">levelup_log</a><a href="#leveluplog升级日志">升级日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#loginlog登录日志">login_log</a><a href="#loginlog登录日志">登录日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#moneylog金钱日志">money_log</a><a href="#moneylog金钱日志">金钱日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#newbielog新手日志">newbie_log</a><a href="#newbielog新手日志">新手日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#orderlog订单日志">order_log</a><a href="#orderlog订单日志">订单日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#ranklog榜单日志">rank_log</a><a href="#ranklog榜单日志">榜单日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#registerlog注册日志">register_log</a><a href="#registerlog注册日志">注册日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#scorelog积分相关日志">score_log</a><a href="#scorelog积分相关日志">积分相关日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#tasklog任务指引日志">task_log</a><a href="#tasklog任务指引日志">任务指引日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#titlelog称号日志">title_log</a><a href="#titlelog称号日志">称号日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#tradelog交易日志">trade_log</a><a href="#tradelog交易日志">交易日志</a> </p>
+      </li>
+      <li>
+        <p><a href="#trainlog训练日志">train_log</a><a href="#trainlog训练日志">训练日志</a> </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<h3><a name="概要" id="概要"></a> 概要</h3>
+<p>本文主要记录《乱战》游戏log中各表中记录的数值与实际对应意义，以便相关人员进行查询。</p>
+<h3><a name="规范与说明" id="规范与说明"></a> 规范与说明</h3>
+<hr/>
+<hr/>
+<h4><a name="achievementlog成就日志" id="achievementlog成就日志"></a> achievement_log成就日志</h4>
+<div id="answer-1938528670" dir="ltr">
+  <table width="404" border="1" cellpadding="2" cellspacing="0">
+    <col width="102" />
+    <col width="72" />
+    <col width="218" />
+    <tr>
+      <th width="102"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="218"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="102"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="218"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="218"><p>LOG生成时间 </p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>dist_name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="218"><p>区组(暂无) </p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="218"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="218"><p>角色 </p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>level </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="218"><p>当前等级 </p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="218"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>achievement </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="218"><p>成就编号 </p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>first_complete </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="218"><p>是否首次完成（0不是，1是） </p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>complete_type </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="218"><p>战斗类型 </p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>complete_id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="218"><p>战斗id </p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>bonus </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="218"><p>奖励 </p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>para1 </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="218"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>para2 </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="218"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>para3 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="218"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>memo </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="218"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p>complete_type字段</p>
+  <table width="161" border="1" cellpadding="2" cellspacing="0">
+    <col width="114" />
+    <col width="39" />
+    <tr>
+      <th width="114"> <p>complete_type</p></th>
+      <th width="39"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="114"><p>train</p></td>
+      <td width="39"><p>训练</p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>guide</p></td>
+      <td width="39"><p>战役</p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>duel</p></td>
+      <td width="39"><p>对战</p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>competition_duel</p></td>
+      <td width="39"><p>竞赛</p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>activity_duel</p></td>
+      <td width="39"><p>活动</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<hr/>
+<h4><a name="applylog物品消耗日志" id="applylog物品消耗日志"></a> apply_log物品消耗日志</h4>
+<div id="answer-1486348246" dir="ltr">
+  <table width="280" border="1" cellpadding="2" cellspacing="0">
+    <col width="86" />
+    <col width="72" />
+    <col width="110" />
+    <tr>
+      <th width="86"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="110"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="86"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="110"><p>区组(暂无) </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>角色 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>level </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="110"><p>等级 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>金币 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="110"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>apply_type </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>花费类型 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>item_type </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>物品类型 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>item_iid </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>物品 IID </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>item_num </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>物品数量 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>item_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="110"><p>物品名称 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>para1 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="110"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>para2 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="110"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>para3 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="110"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>blue_VIP</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="110"><p>是否蓝钻</p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>memo </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="110"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname4" id="$linkname4"></a> type字段</p>
+  <table width="112" border="1" cellpadding="2" cellspacing="0">
+    <col width="34" />
+    <col width="70" />
+    <tr>
+      <th width="34"> <p>type</p></th>
+      <th width="70"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="34"><p>1</p></td>
+      <td width="70"><p>使用</p></td>
+    </tr>
+    <tr>
+      <td width="34"><p>2</p></td>
+      <td width="70"><p>丢弃</p></td>
+    </tr>
+    <tr>
+      <td width="34"><p>3</p></td>
+      <td width="70"><p>系统回收</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname5" id="$linkname5"></a> blue_VIP字段</p>
+  <table width="178" border="1" cellpadding="2" cellspacing="0">
+    <col width="68" />
+    <col width="102" />
+    <tr>
+      <th width="68"> <p>blue_VIP</p></th>
+      <th width="102"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="68"><p>0</p></td>
+      <td width="102"><p>非蓝钻</p></td>
+    </tr>
+    <tr>
+      <td width="68"><p>1-7</p></td>
+      <td width="102"><p>对应蓝钻等级</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname6" id="$linkname6"></a> item_type字段</p>
+  <table width="204" border="1" cellpadding="2" cellspacing="0">
+    <col width="126" />
+    <col width="70" />
+    <tr>
+      <th width="126"> <p>字段 </p></th>
+      <th width="70"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="126"><p>card_back </p></td>
+      <td width="70"><p>卡背</p></td>
+    </tr>
+    <tr>
+      <td width="126"><p>card_baggage </p></td>
+      <td width="70"><p>卡包</p></td>
+    </tr>
+    <tr>
+      <td width="126"><p>gongn </p></td>
+      <td width="70"><p>功能物品</p></td>
+    </tr>
+    <tr>
+      <td width="126"><p>new_card_baggage</p></td>
+      <td width="70"><p>新手礼包</p></td>
+    </tr>
+    <tr>
+      <td width="126"><p>new_commer </p></td>
+      <td width="70"><p>升级礼包</p></td>
+    </tr>
+    <tr>
+      <td width="126"><p>xiaog</p></td>
+      <td width="70"><p>功能物品</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<hr/>
+<h4><a name="auctionlog拍卖行日志" id="auctionlog拍卖行日志"></a> auction_log拍卖行日志 </h4>
+<div id="answer-1998163958" dir="ltr">
+  <table width="282" border="1" cellpadding="2" cellspacing="0">
+    <col width="92" />
+    <col width="72" />
+    <col width="106" />
+    <tr>
+      <th width="92"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="106"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="92"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="106"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="92"><p>update_time</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="106"><p>log生成的时间</p></td>
+    </tr>
+    <tr>
+      <td width="92"><p>account</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="106"><p>账号</p></td>
+    </tr>
+    <tr>
+      <td width="92"><p>name</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="106"><p>角色</p></td>
+    </tr>
+    <tr>
+      <td width="92"><p>level</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="106"><p>等级</p></td>
+    </tr>
+    <tr>
+      <td width="92"><p>money</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="106"><p>金币</p></td>
+    </tr>
+    <tr>
+      <td width="92"><p>insider</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="106"><p>是否会员</p></td>
+    </tr>
+    <tr>
+      <td width="92"><p>item_type</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="106"><p>物品类型</p></td>
+    </tr>
+    <tr>
+      <td width="92"><p>item_id</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="106"><p>物品 IID</p></td>
+    </tr>
+    <tr>
+      <td width="92"><p>item_num</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="106"><p>物品数量</p></td>
+    </tr>
+    <tr>
+      <td width="92"><p>item_price</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="106"><p>物品价格</p></td>
+    </tr>
+    <tr>
+      <td width="92"><p>state</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="106"><p>拍卖状态</p></td>
+    </tr>
+    <tr>
+      <td width="92"><p>auction_id</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="106"><p>拍卖行单号</p></td>
+    </tr>
+    <tr>
+      <td width="92"><p>duration_time</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="106"><p>拍卖时长</p></td>
+    </tr>
+    <tr>
+      <td width="92"><p>memo</p></td>
+      <td width="72"><p>varchar</p></td>
+      <td width="106"><p>记录IP</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname9" id="$linkname9"></a> item_type字段</p>
+  <table width="309" border="1" cellpadding="2" cellspacing="0">
+    <col width="71" />
+    <col width="230" />
+    <tr>
+      <th width="71"> <p>item_type</p></th>
+      <th width="230"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="71"><p>item</p></td>
+      <td width="230"><p>物品（图谱、灵魂石属于物品）</p></td>
+    </tr>
+    <tr>
+      <td width="71"><p>card</p></td>
+      <td width="230"><p>卡牌（元灵属于卡牌）</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname10" id="$linkname10"></a> state字段</p>
+  <table width="413" border="1" cellpadding="2" cellspacing="0">
+    <col width="143" />
+    <col width="262" />
+    <tr>
+      <th width="143"> <p>state</p></th>
+      <th width="262"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="143"><p>add</p></td>
+      <td width="262"><p>开始拍卖</p></td>
+    </tr>
+    <tr>
+      <td width="143"><p>buy</p></td>
+      <td width="262"><p>购买</p></td>
+    </tr>
+    <tr>
+      <td width="143"><p>remove_auction </p></td>
+      <td width="262"><p>取消拍卖</p></td>
+    </tr>
+    <tr>
+      <td width="143"><p>buy_failed </p></td>
+      <td width="262"><p>购买失败</p></td>
+    </tr>
+    <tr>
+      <td width="143"><p>buy_success</p></td>
+      <td width="262"><p>购买成功</p></td>
+    </tr>
+    <tr>
+      <td width="143"><p>sell_failed </p></td>
+      <td width="262"><p>销售失败</p></td>
+    </tr>
+    <tr>
+      <td width="143"><p>sell_success </p></td>
+      <td width="262"><p>销售成功</p></td>
+    </tr>
+    <tr>
+      <td width="143"><p>remove_sell_out </p></td>
+      <td width="262"><p>移除售出的物品</p></td>
+    </tr>
+    <tr>
+      <td width="143"><p>remove_buy_out </p></td>
+      <td width="262"><p>移除购买的物品</p></td>
+    </tr>
+    <tr>
+      <td width="143"><p>time_out</p></td>
+      <td width="262"><p>拍卖超时</p></td>
+    </tr>
+    <tr>
+      <td width="143"><p>remove_time_out</p></td>
+      <td width="262"><p>移除超时的物品</p></td>
+    </tr>
+    <tr>
+      <td width="143"><p>remove_sell_failed </p></td>
+      <td width="262"><p>移除拍卖失败（取回拍卖物品）</p></td>
+    </tr>
+    <tr>
+      <td width="143"><p>remove_sell_success </p></td>
+      <td width="262"><p>移除拍卖成功（取回拍卖所得货币）</p></td>
+    </tr>
+    <tr>
+      <td width="143"><p>remove_buy_success </p></td>
+      <td width="262"><p>移除购买成功（取回购买所得物品）</p></td>
+    </tr>
+    <tr>
+      <td width="143"><p>remove_buy_failed </p></td>
+      <td width="262"><p>移除购买失败（取回购买货币）</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<hr/>
+<h4><a name="blocklog玩家受处罚日志（还未完成）" id="blocklog玩家受处罚日志（还未完成）"></a> block_log玩家受处罚日志（还未完成）</h4>
+<div id="answer-1715604422" dir="ltr">
+  <table width="468" border="1" cellpadding="2" cellspacing="0">
+    <col width="114" />
+    <col width="72" />
+    <col width="270" />
+    <tr>
+      <th width="114"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="270"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="114"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="270"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="270"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="270"><p>区组(暂无)名字 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="270"><p>玩家帐号 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="270"><p>角色名字 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>operation_mode </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="270"><p>操作模式，具体见右侧 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>operation_type </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="270"><p>操作类型，具体见右侧 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>operation_action </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="270"><p>具体的操作行为，再讨论 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>due_time </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="270"><p>受处罚时长(秒、-1、0) </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>reason_type </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="270"><p>处罚类型，具体见右侧 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>operator </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="270"><p>操作者信息(GM的角色名或工具帐号) </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>para1 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="270"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>para2 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="270"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>para3 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="270"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>memo </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="270"><p>受处罚时，GM所输入的处罚原因 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname13" id="$linkname13"></a> mode字段</p>
+  <table width="152" border="1" cellpadding="2" cellspacing="0">
+    <col width="41" />
+    <col width="102" />
+    <tr>
+      <th width="41"> <p>mode</p></th>
+      <th width="102"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="41"><p>0</p></td>
+      <td width="102"><p>GM功能</p></td>
+    </tr>
+    <tr>
+      <td width="41"><p>1</p></td>
+      <td width="102"><p>工具进行操作</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname14" id="$linkname14"></a> type字段</p>
+  <table width="128" border="1" cellpadding="2" cellspacing="0">
+    <col width="34" />
+    <col width="86" />
+    <tr>
+      <th width="34"> <p>type</p></th>
+      <th width="86"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="34"><p>0</p></td>
+      <td width="86"><p>释放性操作</p></td>
+    </tr>
+    <tr>
+      <td width="34"><p>1</p></td>
+      <td width="86"><p>限制性操作</p></td>
+    </tr>
+    <tr>
+      <td width="34"><p>2</p></td>
+      <td width="86"><p>其他操作</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname15" id="$linkname15"></a> action字段</p>
+  <table width="227" border="1" cellpadding="2" cellspacing="0">
+    <col width="45" />
+    <col width="68" />
+    <col width="102" />
+    <tr>
+      <th width="45"> <p>action</p></th>
+      <th width="68"> <p>行为说明</p></th>
+      <th width="102"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="45"><p>1 </p></td>
+      <td width="68"><p>fengbzh</p></td>
+      <td width="102"><p>封闭账号</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>2 </p></td>
+      <td width="68"><p>jiefzh</p></td>
+      <td width="102"><p>解封账号</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>3 </p></td>
+      <td width="68"><p>fengbjs</p></td>
+      <td width="102"><p>封闭角色</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>4 </p></td>
+      <td width="68"><p>jiefjs</p></td>
+      <td width="102"><p>解封角色</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>5 </p></td>
+      <td width="68"><p>pindjy</p></td>
+      <td width="102"><p>频道禁言</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>6 </p></td>
+      <td width="68"><p>jiecjy</p></td>
+      <td width="102"><p>解除禁言</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>7 </p></td>
+      <td width="68"><p>xianzzh</p></td>
+      <td width="102"><p>限制账号</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>8 </p></td>
+      <td width="68"><p>jieczhxz</p></td>
+      <td width="102"><p>解除账号限制</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>9 </p></td>
+      <td width="68"><p>xianzjs</p></td>
+      <td width="102"><p>限制角色</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>10 </p></td>
+      <td width="68"><p>jiecjsxz</p></td>
+      <td width="102"><p>解除角色限制</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<hr/>
+<h4><a name="bonuslog奖励日志" id="bonuslog奖励日志"></a> bonus_log奖励日志</h4>
+<div id="answer-611631699" dir="ltr">
+  <table width="547" border="1" cellpadding="2" cellspacing="0">
+    <col width="117" />
+    <col width="72" />
+    <col width="346" />
+    <tr>
+      <th width="117"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="346"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="117"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="346"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="346"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="346"><p>区组(暂无)名字 </p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="346"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="346"><p>角色 </p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>level </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="346"><p>等级 </p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="346"><p>金币 </p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>remain_score </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="346"><p>积分 </p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="346"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>bonus_type </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="346"><p>奖励类型 </p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>bonus_from </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="346"><p>奖励来源 </p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>bonus_from_info </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="346"><p>奖励来源具体信息 </p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>bonus_from_rid </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="346"><p>奖励来源具体iid </p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>bonus_info </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="346"><p>奖励信息 如果是逃跑扣除积分，直接记录为负数</p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>para1 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="346"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>para2 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="346"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>para3 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="346"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="117"><p>memo </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="346"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname18" id="$linkname18"></a> bonus_type字段</p>
+  <table width="401" border="1" cellpadding="2" cellspacing="0">
+    <col width="82" />
+    <col width="310" />
+    <tr>
+      <th width="82"> <p>bonus_type</p></th>
+      <th width="310"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="82"><p>1</p></td>
+      <td width="310"><p>积分</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>2</p></td>
+      <td width="310"><p>卡牌</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>3</p></td>
+      <td width="310"><p>金钱</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>4</p></td>
+      <td width="310"><p>经验</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>5</p></td>
+      <td width="310"><p>道具</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>6</p></td>
+      <td width="310"><p>银票</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>7</p></td>
+      <td width="310"><p>称号</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>8</p></td>
+      <td width="310"><p>素材（素材目前做为道具，在道具日志中）</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname19" id="$linkname19"></a> bonus_from字段</p>
+  <table width="192" border="1" cellpadding="2" cellspacing="0">
+    <col width="114" />
+    <col width="70" />
+    <tr>
+      <th width="114"> <p>bonus_from</p></th>
+      <th width="70"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="114"><p>train</p></td>
+      <td width="70"><p>训练</p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>guide</p></td>
+      <td width="70"><p>战役</p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>duel</p></td>
+      <td width="70"><p>对战</p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>collection</p></td>
+      <td width="70"><p>集卡奖励</p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>competition_duel</p></td>
+      <td width="70"><p>竞赛</p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>task</p></td>
+      <td width="70"><p>任务</p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>activity_duel</p></td>
+      <td width="70"><p>活动</p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>login</p></td>
+      <td width="70"><p>登录奖励</p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>newcomer</p></td>
+      <td width="70"><p>新手礼包</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname20" id="$linkname20"></a> bonus_from_info 字段</p>
+  <table width="487" border="1" cellpadding="2" cellspacing="0">
+    <col width="120" />
+    <col width="147" />
+    <col width="208" />
+    <tr>
+      <th width="120"> <p>bonus_from_info</p></th>
+      <th width="147"> <p>含义</p></th>
+      <th width="208"> <p>备注</p></th>
+    </tr>
+    <tr>
+      <td width="120"><p>normal_4</p></td>
+      <td width="147"><p>四人区</p></td>
+      <td width="208"><p>bonus_from为duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>official</p></td>
+      <td width="147"><p>正式区</p></td>
+      <td width="208"><p>bonus_from为duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>freedom</p></td>
+      <td width="147"><p>自由区</p></td>
+      <td width="208"><p>bonus_from为duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>tyrant</p></td>
+      <td width="147"><p>魔王区</p></td>
+      <td width="208"><p>bonus_from为duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>draw</p></td>
+      <td width="147"><p>现开区</p></td>
+      <td width="208"><p>bonus_from为duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>kof</p></td>
+      <td width="147"><p>车轮区（暂未开放）</p></td>
+      <td width="208"><p>bonus_from为duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>activity1</p></td>
+      <td width="147"><p>曹魏争霸赛</p></td>
+      <td width="208"><p>bonus_from为activity_duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>activity2</p></td>
+      <td width="147"><p>蜀汉争霸赛</p></td>
+      <td width="208"><p>bonus_from为activity_duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>activity3</p></td>
+      <td width="147"><p>孙吴争霸赛</p></td>
+      <td width="208"><p>bonus_from为activity_duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>activity4</p></td>
+      <td width="147"><p>银卡争霸赛</p></td>
+      <td width="208"><p>bonus_from为activity_duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>activity5</p></td>
+      <td width="147"><p>平民英雄</p></td>
+      <td width="208"><p>bonus_from为activity_duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>activity6</p></td>
+      <td width="147"><p>持久战</p></td>
+      <td width="208"><p>bonus_from为activity_duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>activity7</p></td>
+      <td width="147"><p>闪电战</p></td>
+      <td width="208"><p>bonus_from为activity_duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>activity8</p></td>
+      <td width="147"><p>快速反应</p></td>
+      <td width="208"><p>bonus_from为activity_duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>activity9</p></td>
+      <td width="147"><p>五谷丰登</p></td>
+      <td width="208"><p>bonus_from为activity_duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>activity10</p></td>
+      <td width="147"><p>逆转战</p></td>
+      <td width="208"><p>bonus_from为activity_duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>competition</p></td>
+      <td width="147"><p>竞赛</p></td>
+      <td width="208"><p>bonus_from为competition_duel</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>1-12</p></td>
+      <td width="147"><p>训练对应编号</p></td>
+      <td width="208"><p>bonus_from为train</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>1-14、101-107</p></td>
+      <td width="147"><p>战役对应编号</p></td>
+      <td width="208"><p>bonus_from为guide</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>1000-10090</p></td>
+      <td width="147"><p>任务对应编号</p></td>
+      <td width="208"><p>bonus_from为task</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="cardlog卡牌日志" id="cardlog卡牌日志"></a> card_log卡牌日志</h4>
+<div id="answer-1672032580" dir="ltr">
+  <table width="456" border="1" cellpadding="2" cellspacing="0">
+    <col width="106" />
+    <col width="72" />
+    <col width="266" />
+    <tr>
+      <th width="106"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="266"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="106"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="266"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="266"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="266"><p>区组(暂无) </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="266"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="266"><p>角色 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>level </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="266"><p>等级 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="266"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>action </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="266"><p>操作行为 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>card_from </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="266"><p>卡牌来源 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>card_type </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="266"><p>卡牌类型 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>card_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="266"><p>卡牌姓名 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>card_iid </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="266"><p>卡牌iid </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>card_num </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="266"><p>卡牌数量 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>card_star </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="266"><p>卡牌星级 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>card_rare </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="266"><p>卡牌稀有度 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>card_str </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="266"><p>卡牌武力 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>card_int </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="266"><p>卡牌智力 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>transfer_enable </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="266"><p>是否可交易（0不可交易，1可交易） </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>restrain </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="266"><p>是否限制 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>restrain_time </p></td>
+      <td width="72"><p>bigint </p></td>
+      <td width="266"><p>限制时间 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>para1 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="266"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>para2 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="266"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>para3 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="266"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>memo </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="266"><p>备注 </p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>blue_VIP</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="266"><p>是否蓝钻</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname23" id="$linkname23"></a> action字段</p>
+  <table width="130" border="1" cellpadding="2" cellspacing="0">
+    <col width="52" />
+    <col width="70" />
+    <tr>
+      <th width="52"> <p>action</p></th>
+      <th width="70"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="52"><p>add</p></td>
+      <td width="70"><p>卡牌添加</p></td>
+    </tr>
+    <tr>
+      <td width="52"><p>remove</p></td>
+      <td width="70"><p>卡牌移除</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname24" id="$linkname24"></a> card_from字段</p>
+  <table width="225" border="1" cellpadding="2" cellspacing="0">
+    <col width="131" />
+    <col width="86" />
+    <tr>
+      <th width="131"> <p>card_from</p></th>
+      <th width="86"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="131"><p>train</p></td>
+      <td width="86"><p>训练</p></td>
+    </tr>
+    <tr>
+      <td width="131"><p>guide</p></td>
+      <td width="86"><p>战役</p></td>
+    </tr>
+    <tr>
+      <td width="131"><p>duel</p></td>
+      <td width="86"><p>对战</p></td>
+    </tr>
+    <tr>
+      <td width="131"><p>collection</p></td>
+      <td width="86"><p>集卡奖励</p></td>
+    </tr>
+    <tr>
+      <td width="131"><p>competition_duel</p></td>
+      <td width="86"><p>竞赛</p></td>
+    </tr>
+    <tr>
+      <td width="131"><p>task</p></td>
+      <td width="86"><p>任务</p></td>
+    </tr>
+    <tr>
+      <td width="131"><p>newcomer</p></td>
+      <td width="86"><p>新手礼包</p></td>
+    </tr>
+    <tr>
+      <td width="131"><p>activity_duel</p></td>
+      <td width="86"><p>活动</p></td>
+    </tr>
+    <tr>
+      <td width="131"><p>smelt</p></td>
+      <td width="86"><p>卡片熔炼</p></td>
+    </tr>
+    <tr>
+      <td width="131"><p>gm</p></td>
+      <td width="86"><p>gm操作</p></td>
+    </tr>
+    <tr>
+      <td width="131"><p>trade</p></td>
+      <td width="86"><p>交易</p></td>
+    </tr>
+    <tr>
+      <td width="131"><p>auction</p></td>
+      <td width="86"><p>拍卖行</p></td>
+    </tr>
+    <tr>
+      <td width="131"><p>remove_auction</p></td>
+      <td width="86"><p>移除拍卖行</p></td>
+    </tr>
+    <tr>
+      <td width="131"><p>buy</p></td>
+      <td width="86"><p>购买</p></td>
+    </tr>
+    <tr>
+      <td width="131"><p>open_card_baggage</p></td>
+      <td width="86"><p>开卡包</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname25" id="$linkname25"></a> card_type字段</p>
+  <table width="108" border="1" cellpadding="2" cellspacing="0">
+    <col width="46" />
+    <col width="54" />
+    <tr>
+      <th width="46"> <p>type</p></th>
+      <th width="54"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="46"><p>green</p></td>
+      <td width="54"><p>计谋卡</p></td>
+    </tr>
+    <tr>
+      <td width="46"><p>red</p></td>
+      <td width="54"><p>陷阱卡</p></td>
+    </tr>
+    <tr>
+      <td width="46"><p>gold</p></td>
+      <td width="54"><p>金卡</p></td>
+    </tr>
+    <tr>
+      <td width="46"><p>seliver</p></td>
+      <td width="54"><p>银卡</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname26" id="$linkname26"></a> restrain字段</p>
+  <table width="119" border="1" cellpadding="2" cellspacing="0">
+    <col width="57" />
+    <col width="54" />
+    <tr>
+      <th width="57"> <p>restrain</p></th>
+      <th width="54"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="57"><p>0</p></td>
+      <td width="54"><p>不限制</p></td>
+    </tr>
+    <tr>
+      <td width="57"><p>1</p></td>
+      <td width="54"><p>限时</p></td>
+    </tr>
+    <tr>
+      <td width="57"><p>2</p></td>
+      <td width="54"><p>限次</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname27" id="$linkname27"></a> blue_VIP字段</p>
+  <table width="178" border="1" cellpadding="2" cellspacing="0">
+    <col width="68" />
+    <col width="102" />
+    <tr>
+      <th width="68"> <p>blue_VIP</p></th>
+      <th width="102"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="68"><p>0</p></td>
+      <td width="102"><p>非蓝钻</p></td>
+    </tr>
+    <tr>
+      <td width="68"><p>1-7</p></td>
+      <td width="102"><p>对应蓝钻等级</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="cardsmeltlog熔炼卡牌日志" id="cardsmeltlog熔炼卡牌日志"></a> card_smelt_log熔炼卡牌日志</h4>
+<div id="answer-1999965828" dir="ltr">
+  <table width="354" border="1" cellpadding="2" cellspacing="0">
+    <col width="116" />
+    <col width="72" />
+    <col width="154" />
+    <tr>
+      <th width="116"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="154"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="116"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="154"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="154"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="154"><p>区组(暂无) </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="154"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="154"><p>角色 </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>level </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="154"><p>当前等级 </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="154"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>action </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="154"><p>操作行为 </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>status </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="154"><p>熔炼炉状态 </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>smelt_use_cards </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="154"><p>熔炼的卡牌 </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>smelt_start_time </p></td>
+      <td width="72"><p>bigint </p></td>
+      <td width="154"><p>熔炼开始时间 </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>smelt_need_time </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="154"><p>熔炼所需时间 </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>card_iid</p></td>
+      <td width="72"><p>int </p></td>
+      <td width="154"><p>熔炼生成的卡牌iid </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>card_name</p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="154"><p>熔炼生成的卡牌名 </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>card_num</p></td>
+      <td width="72"><p>int </p></td>
+      <td width="154"><p>熔炼生成的卡牌数量 </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>smelt_rid</p></td>
+      <td width="72"><p>char </p></td>
+      <td width="154"><p>熔炼iid </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>para1 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="154"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>para2 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="154"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>para3 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="154"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="116"><p>memo </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="154"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname30" id="$linkname30"></a> action字段</p>
+  <table width="230" border="1" cellpadding="2" cellspacing="0">
+    <col width="120" />
+    <col width="102" />
+    <tr>
+      <th width="120"> <p>action</p></th>
+      <th width="102"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="120"><p>start </p></td>
+      <td width="102"><p>开始熔炼 </p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>minus_smelt_time</p></td>
+      <td width="102"><p>减少熔炼时间</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>complete</p></td>
+      <td width="102"><p>熔炼完成</p></td>
+    </tr>
+    <tr>
+      <td width="120"><p>remove</p></td>
+      <td width="102"><p>熔炼炉到期</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="chatlog聊天日志" id="chatlog聊天日志"></a> chat_log聊天日志</h4>
+<div id="answer-771681719" dir="ltr">
+  <table width="311" border="1" cellpadding="2" cellspacing="0">
+    <col width="93" />
+    <col width="72" />
+    <col width="134" />
+    <tr>
+      <th width="93"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="134"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="93"><p>id</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="134" valign="top"></td>
+    </tr>
+    <tr>
+      <td width="93"><p>update_time</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="134"><p>没半小时记录一次</p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>account</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="134"><p>账号</p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>name</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="134"><p>角色</p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>level</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="134"><p>等级</p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>money</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="134"><p>金币</p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>insider</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="134"><p>是否会员</p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>world</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="134"><p>世界喊话次数</p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>room</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="134"><p>房间喊话次数</p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>whisper</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="134"><p>密人次数</p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>whisper_from</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="134"><p>被密人次数</p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>memo</p></td>
+      <td width="72"><p>varchar</p></td>
+      <td width="134"><p>&nbsp;</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="competitionlog竞赛日志" id="competitionlog竞赛日志"></a> competition_log竞赛日志 </h4>
+<div id="answer-723004030" dir="ltr">
+  <table width="299" border="1" cellpadding="2" cellspacing="0">
+    <col width="105" />
+    <col width="72" />
+    <col width="110" />
+    <tr>
+      <th width="105"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="110"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="105"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="105"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="105"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="105"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>角色 </p></td>
+    </tr>
+    <tr>
+      <td width="105"><p>level </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>等级 </p></td>
+    </tr>
+    <tr>
+      <td width="105"><p>money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>金币 </p></td>
+    </tr>
+    <tr>
+      <td width="105"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="110"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="105"><p>action </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>竞赛阶段 </p></td>
+    </tr>
+    <tr>
+      <td width="105"><p>group_index </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>分组编号 </p></td>
+    </tr>
+    <tr>
+      <td width="105"><p>room_number </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>房间编号 </p></td>
+    </tr>
+    <tr>
+      <td width="105"><p>ip_address </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>IP 地址 </p></td>
+    </tr>
+    <tr>
+      <td width="105"><p>opponent </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>对手 </p></td>
+    </tr>
+    <tr>
+      <td width="105"><p>opponent_ip </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>对手 IP 地址 </p></td>
+    </tr>
+    <tr>
+      <td width="105"><p>opponent_level </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>对手等级 </p></td>
+    </tr>
+    <tr>
+      <td width="105"><p>result </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>比赛结果 </p></td>
+    </tr>
+    <tr>
+      <td width="105"><p>memo </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="110"><p>冠军名字 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname35" id="$linkname35"></a> action 字段</p>
+  <table width="92" border="1" cellpadding="2" cellspacing="0">
+    <col width="45" />
+    <col width="39" />
+    <tr>
+      <th width="45"> <p>action</p></th>
+      <th width="39"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="45"><p>enroll</p></td>
+      <td width="39"><p>报名</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>assign</p></td>
+      <td width="39"><p>分配</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>end</p></td>
+      <td width="39"><p>结束</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname36" id="$linkname36"></a> result 字段</p>
+  <table width="93" border="1" cellpadding="2" cellspacing="0">
+    <col width="43" />
+    <col width="42" />
+    <tr>
+      <th width="43"> <p>result</p></th>
+      <th width="42"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="43"><p>true</p></td>
+      <td width="42"><p>赢了</p></td>
+    </tr>
+    <tr>
+      <td width="43"><p>false</p></td>
+      <td width="42"><p>输了</p></td>
+    </tr>
+    <tr>
+      <td width="43"><p>drop </p></td>
+      <td width="42"><p>弃权 </p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="costlog道具消费日志" id="costlog道具消费日志"></a> cost_log道具消费日志</h4>
+<div id="answer-161045240" dir="ltr">
+  <table width="287" border="1" cellpadding="2" cellspacing="0">
+    <col width="93" />
+    <col width="72" />
+    <col width="110" />
+    <tr>
+      <th width="93"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="110"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="93"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="110"><p>区组(暂无) </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>角色 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>level </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>等级 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>金币 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>remain_score </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>积分 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="110"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>cost_type </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>消耗类型 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>value </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>消耗数值 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>item_iid </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>物品 IID </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>item_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="110"><p>物品名称 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>item_num </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>物品数量 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>memo </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="110"><p>备注 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>blue_VIP</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="110"><p>是否蓝钻</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname39" id="$linkname39"></a> cost_type字段</p>
+  <table width="150" border="1" cellpadding="2" cellspacing="0">
+    <col width="68" />
+    <col width="74" />
+    <tr>
+      <th width="68"> <p>cost_type</p></th>
+      <th width="74"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="68"><p>1 </p></td>
+      <td width="74"><p>积分消耗 </p></td>
+    </tr>
+    <tr>
+      <td width="68"><p>2</p></td>
+      <td width="74"><p>金币消耗</p></td>
+    </tr>
+    <tr>
+      <td width="68"><p>3</p></td>
+      <td width="74"><p>银票消耗</p></td>
+    </tr>
+    <tr>
+      <td width="68"><p>4</p></td>
+      <td width="74"><p>Q点消耗</p></td>
+    </tr>
+    <tr>
+      <td width="68"><p>5</p></td>
+      <td width="74"><p>财付通</p></td>
+    </tr>
+    <tr>
+      <td width="68"><p>5</p></td>
+      <td width="74"><p>财付通</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname40" id="$linkname40"></a> Q点消耗</p>
+  <p><a name="$linkname41" id="$linkname41"></a> blue_VIP字段</p>
+  <table width="178" border="1" cellpadding="2" cellspacing="0">
+    <col width="68" />
+    <col width="102" />
+    <tr>
+      <th width="68"> <p>blue_VIP</p></th>
+      <th width="102"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="68"><p>0</p></td>
+      <td width="102"><p>非蓝钻</p></td>
+    </tr>
+    <tr>
+      <td width="68"><p>1-7</p></td>
+      <td width="102"><p>对应蓝钻等级</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4>duel_log对战日志</h4>
+<div id="answer-1706757554" dir="ltr">
+  <table width="358" border="1" cellpadding="2" cellspacing="0">
+    <col width="136" />
+    <col width="72" />
+    <col width="138" />
+    <tr>
+      <th width="136"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="138"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="136"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="138"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="138"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="138"><p>区组(暂无) </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="138"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="138"><p>角色 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>level </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="138"><p>等级 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>duel_level</p></td>
+      <td width="72"><p>int </p></td>
+      <td width="138"><p>战斗等级 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>opponent_level</p></td>
+      <td width="72"><p>int </p></td>
+      <td width="138"><p>对手等级 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>opponent_duel_level</p></td>
+      <td width="72"><p>int </p></td>
+      <td width="138"><p>对手战斗等级 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="138"><p>金币 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>remain_score </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="138"><p>积分 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="138"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>ip_address </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="138"><p>IP地址 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>win_time </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="138"><p>获胜场次 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>lose_time </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="138"><p>失败场次 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>escape_time </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="138"><p>逃跑次数 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>room_type </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="138"><p>战斗类型</p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>opponent </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="138"><p>对手角色 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>opponent_ip </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="138"><p>对手IP </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>duel_result </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="138"><p>对战结果，见右侧 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>time_cost </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="138"><p>花费时间 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>duel_rid </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="138"><p>战斗iid </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>memo </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="138"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname44" id="$linkname44"></a> room_type字段</p>
+  <table width="174" border="1" cellpadding="2" cellspacing="0">
+    <col width="80" />
+    <col width="86" />
+    <tr>
+      <th width="80"> <p>room_type</p></th>
+      <th width="86"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="80"><p>normal_4</p></td>
+      <td width="86"><p>四人区</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>official</p></td>
+      <td width="86"><p>正式区</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>freedom</p></td>
+      <td width="86"><p>自由区</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>tyrant</p></td>
+      <td width="86"><p>魔王区</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>draw</p></td>
+      <td width="86"><p>现开区</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>activity1</p></td>
+      <td width="86"><p>曹魏争霸赛</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>activity2</p></td>
+      <td width="86"><p>蜀汉争霸赛</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>activity3</p></td>
+      <td width="86"><p>孙吴争霸赛</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>activity4</p></td>
+      <td width="86"><p>银卡争霸赛</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>activity5</p></td>
+      <td width="86"><p>平民英雄</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>activity6</p></td>
+      <td width="86"><p>持久战</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>activity7</p></td>
+      <td width="86"><p>闪电战</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>activity8</p></td>
+      <td width="86"><p>快速反应</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>activity9</p></td>
+      <td width="86"><p>五谷丰登</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>activity10</p></td>
+      <td width="86"><p>逆转战</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>competition</p></td>
+      <td width="86"><p>竞赛</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname45" id="$linkname45"></a> duel_result字段</p>
+  <table width="326" border="1" cellpadding="2" cellspacing="0">
+    <col width="80" />
+    <col width="238" />
+    <tr>
+      <th width="80"> <p>duel_result</p></th>
+      <th width="238"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="80"><p>1</p></td>
+      <td width="238"><p>对方逃跑而胜利</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>2</p></td>
+      <td width="238"><p>对方逃跑，不足5分钟未获得胜利</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>3</p></td>
+      <td width="238"><p>我方逃跑</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>4</p></td>
+      <td width="238"><p>正常战斗胜利</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>5</p></td>
+      <td width="238"><p>正常战斗失败</p></td>
+    </tr>
+    <tr>
+      <td width="80"><p>6</p></td>
+      <td width="238"><p>队友逃跑</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="duellevellog战绩日志" id="duellevellog战绩日志"></a> duel_level_log战绩日志</h4>
+<div id="answer-601650744" dir="ltr">
+  <table width="360" border="1" cellpadding="2" cellspacing="0">
+    <col width="136" />
+    <col width="72" />
+    <col width="139" />
+    <tr>
+      <th width="136"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="139"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="136"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="139"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="139"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="139"><p>区组(暂无) </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="139"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="139"><p>角色 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>level </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="139"><p>等级 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="139"><p>金币 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="139"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>remain_duel_level </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="139"><p>原战绩 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>type </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="139"><p>获得消耗 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>action </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="139"><p>行为 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>duel_level_num </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="139"><p>战绩数量 </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>duel_level_from_rid </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="139"><p>战绩获得的战斗rid </p></td>
+    </tr>
+    <tr>
+      <td width="136"><p>memo </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="139"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname48" id="$linkname48"></a> type字段</p>
+  <table width="81" border="1" cellpadding="2" cellspacing="0">
+    <col width="34" />
+    <col width="39" />
+    <tr>
+      <th width="34"> <p>type</p></th>
+      <th width="39"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="34"><p>0</p></td>
+      <td width="39"><p>获得</p></td>
+    </tr>
+    <tr>
+      <td width="34"><p>1</p></td>
+      <td width="39"><p>消耗</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname49" id="$linkname49"></a> action字段</p>
+  <table width="222" border="1" cellpadding="2" cellspacing="0">
+    <col width="112" />
+    <col width="102" />
+    <tr>
+      <th width="112"> <p>action</p></th>
+      <th width="102"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="112"><p>official</p></td>
+      <td width="102"><p>正式区</p></td>
+    </tr>
+    <tr>
+      <td width="112"><p>competition</p></td>
+      <td width="102"><p>竞赛</p></td>
+    </tr>
+    <tr>
+      <td width="112"><p>ac_pinmin</p></td>
+      <td width="102"><p>平民英雄活动</p></td>
+    </tr>
+    <tr>
+      <td width="112"><p>ac_caowei</p></td>
+      <td width="102"><p>曹魏争霸赛 </p></td>
+    </tr>
+    <tr>
+      <td width="112"><p>ac_chijiuzhan</p></td>
+      <td width="102"><p>持久战 </p></td>
+    </tr>
+    <tr>
+      <td width="112"><p>ac_kuaisu</p></td>
+      <td width="102"><p>快速反应 </p></td>
+    </tr>
+    <tr>
+      <td width="112"><p>ac_nizhuan</p></td>
+      <td width="102"><p>逆转战 </p></td>
+    </tr>
+    <tr>
+      <td width="112"><p>ac_shandianzhan</p></td>
+      <td width="102"><p>闪电战 </p></td>
+    </tr>
+    <tr>
+      <td width="112"><p>ac_shuhan</p></td>
+      <td width="102"><p>蜀汉争霸赛 </p></td>
+    </tr>
+    <tr>
+      <td width="112"><p>ac_sunwu</p></td>
+      <td width="102"><p>孙吴争霸赛 </p></td>
+    </tr>
+    <tr>
+      <td width="112"><p>ac_wugu</p></td>
+      <td width="102"><p>五谷丰登 </p></td>
+    </tr>
+    <tr>
+      <td width="112"><p>ac_yinka</p></td>
+      <td width="102"><p>银卡战 </p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="friendlog好友操作日志" id="friendlog好友操作日志"></a> friend_log好友操作日志</h4>
+<div id="answer-35085766" dir="ltr">
+  <table width="293" border="1" cellpadding="2" cellspacing="0">
+    <col width="87" />
+    <col width="72" />
+    <col width="122" />
+    <tr>
+      <th width="87"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="122"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="87"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="122"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="122"><p>log生成的时间? </p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="122"><p>区组(暂无)名字 </p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="122"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="122"><p>角色 </p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>level </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="122"><p>等级 </p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="122"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>action </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="122"><p>操作行为 </p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>friend </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="122"><p>操作的好友帐号 </p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>friends_num </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="122"><p>当前好友数量 </p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>para1 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="122"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>para2 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="122"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>para3 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="122"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>memo </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="122"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname52" id="$linkname52"></a> action字段</p>
+  <table width="210" border="1" cellpadding="2" cellspacing="0">
+    <col width="100" />
+    <col width="102" />
+    <tr>
+      <th width="100"> <p>action</p></th>
+      <th width="102"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="100"><p>add</p></td>
+      <td width="102"><p>加好友</p></td>
+    </tr>
+    <tr>
+      <td width="100"><p>remove</p></td>
+      <td width="102"><p>删除好友</p></td>
+    </tr>
+    <tr>
+      <td width="100"><p>ignore</p></td>
+      <td width="102"><p>忽略好友信息</p></td>
+    </tr>
+    <tr>
+      <td width="100"><p>remove_ignore</p></td>
+      <td width="102"><p>删除忽略</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="GMlog操作日志" id="GMlog操作日志"></a> GM_log操作日志</h4>
+<div id="answer-1118309943" dir="ltr">
+  <table width="420" border="1" cellpadding="2" cellspacing="0">
+    <col width="86" />
+    <col width="72" />
+    <col width="250" />
+    <tr>
+      <th width="86"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="250"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="86"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="250"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="250"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="250"><p>区组(暂无)名字 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="250"><p>操作者账号，如无操作对象则放空 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="250"><p>操作者角色姓名 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>mode </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="250"><p>操作模式，具体见右侧 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>type </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="250"><p>操作类型，具体见右侧 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>action </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="250"><p>具体的操作行为，再讨论 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>target </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="250"><p>操作目标 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>para1 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="250"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>para2 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="250"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>para3 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="250"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>memo </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="250"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname55" id="$linkname55"></a> mode字段</p>
+  <table width="152" border="1" cellpadding="2" cellspacing="0">
+    <col width="41" />
+    <col width="102" />
+    <tr>
+      <th width="41"> <p>mode</p></th>
+      <th width="102"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="41"><p>0</p></td>
+      <td width="102"><p>GM功能</p></td>
+    </tr>
+    <tr>
+      <td width="41"><p>1</p></td>
+      <td width="102"><p>工具进行操作</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname56" id="$linkname56"></a> type字段</p>
+  <table width="128" border="1" cellpadding="2" cellspacing="0">
+    <col width="34" />
+    <col width="86" />
+    <tr>
+      <th width="34"> <p>type</p></th>
+      <th width="86"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="34"><p>0</p></td>
+      <td width="86"><p>释放性操作</p></td>
+    </tr>
+    <tr>
+      <td width="34"><p>1</p></td>
+      <td width="86"><p>限制性操作</p></td>
+    </tr>
+    <tr>
+      <td width="34"><p>2</p></td>
+      <td width="86"><p>其他操作</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname57" id="$linkname57"></a> aciton字段</p>
+  <table width="808" border="1" cellpadding="2" cellspacing="0">
+    <col width="45" />
+    <col width="147" />
+    <col width="99" />
+    <col width="163" />
+    <col width="99" />
+    <col width="230" />
+    <tr>
+      <th width="45"> <p>aciton</p></th>
+      <th width="147"> <p>行为说明</p></th>
+      <th width="99"> <p>para1</p></th>
+      <th width="163"> <p>para2</p></th>
+      <th width="99"> <p>para3</p></th>
+      <th width="230"> <p>memo</p></th>
+    </tr>
+    <tr>
+      <td width="45"><p>&nbsp;</p></td>
+      <td width="147"><p>add_card_to_user</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>&nbsp;</p></td>
+      <td width="147"><p>add_score_to_user</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>&nbsp;</p></td>
+      <td width="147"><p>add_money_to_user</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>&nbsp;</p></td>
+      <td width="147"><p>change_user_level</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>1</p></td>
+      <td width="147"><p>给玩家发消息</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>发送的消息内容</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>2</p></td>
+      <td width="147"><p>查看玩家帐号</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>所查询账号的关键字，如“werasq”、“zhangwensu”</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>3</p></td>
+      <td width="147"><p>查看玩家属性</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>4</p></td>
+      <td width="147"><p>警告玩家</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>警告内容</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>5</p></td>
+      <td width="147"><p>踢玩家下线</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>6</p></td>
+      <td width="147"><p>中止战斗</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>对方战斗的角色名（战斗名称）；自己队伍中其他角色名信息，如果没有队伍，则为空</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>7</p></td>
+      <td width="147"><p>监听玩家</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>8</p></td>
+      <td width="147"><p>获取进程</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>9</p></td>
+      <td width="147"><p>打捞角色</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>10</p></td>
+      <td width="147"><p>编辑封号原因</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>修改前的封号原因</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>11</p></td>
+      <td width="147"><p>接管与解除接管账号</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>12</p></td>
+      <td width="147"><p>删除角色</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>13</p></td>
+      <td width="147"><p>编辑角色</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>具体修改的数值信息</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>14</p></td>
+      <td width="147"><p>解除玩家关系</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>解除关系具体信息</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>15</p></td>
+      <td width="147"><p>删除道具</p></td>
+      <td width="99"><p>物品iid</p></td>
+      <td width="163"><p>物品原始名字</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>物品的具体属性</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>16</p></td>
+      <td width="147"><p>转移道具</p></td>
+      <td width="99"><p>转移的物品iid</p></td>
+      <td width="163"><p>接收方帐号</p></td>
+      <td width="99"><p>接收方角色gid</p></td>
+      <td width="230"><p>所转移的物品的具体属性信息</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>17</p></td>
+      <td width="147"><p>删除卡牌</p></td>
+      <td width="99"><p>卡牌iid</p></td>
+      <th width="163"> <p>&nbsp;</p></th>
+      <td width="99"><p>卡牌的名称</p></td>
+      <td width="230" valign="top"></td>
+    </tr>
+    <tr>
+      <td width="45"><p>18</p></td>
+      <td width="147"><p>转移卡牌</p></td>
+      <td width="99"><p>卡牌的宠物iid</p></td>
+      <td width="163"><p>接收方帐号</p></td>
+      <td width="99"><p>接收方角色gid</p></td>
+      <td width="230"><p>所转移的卡牌的名称</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>19</p></td>
+      <td width="147"><p>重新生成iid</p></td>
+      <td width="99"><p>卡牌/物品原始iid</p></td>
+      <td width="163"><p>卡牌/物品原始名字</p></td>
+      <td width="99"><p>卡牌/物品重置后的iid</p></td>
+      <td width="230"><p>物品/卡牌的具体属性</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>20</p></td>
+      <td width="147"><p>解除道具安全措施</p></td>
+      <td width="99"><p>物品iid</p></td>
+      <td width="163"><p>物品原始名字</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>具体的安全措施解除信息</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>21</p></td>
+      <td width="147"><p>解除卡牌安全措施</p></td>
+      <td width="99"><p>卡牌iid</p></td>
+      <td width="163"><p>卡牌原始名字</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>具体的安全措施解除信息</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>22</p></td>
+      <td width="147"><p>转移金钱</p></td>
+      <td width="99"><p>接收方角色gid</p></td>
+      <td width="163"><p>接收方帐号</p></td>
+      <td width="99"><p>转移的金钱数</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>23</p></td>
+      <td width="147"><p>设置全局奖励倍数</p></td>
+      <td width="99"><p>奖励开始时间</p></td>
+      <td width="163"><p>奖励持续时长</p></td>
+      <td width="99"><p>奖励倍数</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>24</p></td>
+      <td width="147"><p>开放玩家登录</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>25</p></td>
+      <td width="147"><p>重启服务器</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>26</p></td>
+      <td width="147"><p>禁止玩家登录</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>&nbsp;</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>27</p></td>
+      <td width="147"><p>绑定物品回退记录</p></td>
+      <td width="99"><p>物品iid</p></td>
+      <td width="163"><p>物品原始名字</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>物品回退具体操作信息，包括回退的时间点等</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>28</p></td>
+      <td width="147"><p>补偿操作</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="163"><p>补偿标题</p></td>
+      <td width="99"><p>&nbsp;</p></td>
+      <td width="230"><p>补偿详细信息</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="groupcardlog卡组日志" id="groupcardlog卡组日志"></a> groupcard_log卡组日志</h4>
+<div id="answer-1085141046" dir="ltr">
+  <table width="343" border="1" cellpadding="2" cellspacing="0">
+    <col width="121" />
+    <col width="72" />
+    <col width="138" />
+    <tr>
+      <th width="121"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="138"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="121"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="138"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="121"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="138"><p>LOG生成时间 </p></td>
+    </tr>
+    <tr>
+      <td width="121"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="138"><p>区组(暂无) </p></td>
+    </tr>
+    <tr>
+      <td width="121"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="138"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="121"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="138"><p>角色 </p></td>
+    </tr>
+    <tr>
+      <td width="121"><p>level </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="138"><p>当前等级 </p></td>
+    </tr>
+    <tr>
+      <td width="121"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="138"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="121"><p>all_cards </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="138"><p>玩家手上所有卡片 </p></td>
+    </tr>
+    <tr>
+      <td width="121"><p>group_cards </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="138"><p>玩家原卡组信息</p></td>
+    </tr>
+    <tr>
+      <td width="121"><p>new_group_cards </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="138"><p>新卡组信息</p></td>
+    </tr>
+    <tr>
+      <td width="121"><p>para1 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="138"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="121"><p>para2 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="138"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="121"><p>para3 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="138"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="121"><p>memo </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="138"><p>备注 </p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="gslog服务器日志" id="gslog服务器日志"></a> gs_log服务器日志</h4>
+<div id="answer-1838587006" dir="ltr">
+  <table width="382" border="1" cellpadding="2" cellspacing="0">
+    <col width="89" />
+    <col width="71" />
+    <col width="210" />
+    <tr>
+      <td width="89"><p>字段 </p></td>
+      <td width="71"><p>数值类型 </p></td>
+      <td width="210"><p>备注 </p></td>
+    </tr>
+    <tr>
+      <td width="89"><p>id </p></td>
+      <td width="71"><p>int </p></td>
+      <td width="210"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="89"><p>update_time </p></td>
+      <td width="71"><p>char </p></td>
+      <td width="210"><p>记录时间，每3分钟统计一次 </p></td>
+    </tr>
+    <tr>
+      <td width="89"><p>server_name </p></td>
+      <td width="71"><p>varchar </p></td>
+      <td width="210"><p>服务器名称 </p></td>
+    </tr>
+    <tr>
+      <td width="89"><p>dist_name </p></td>
+      <td width="71"><p>varchar </p></td>
+      <td width="210"><p>区组(暂无)名 </p></td>
+    </tr>
+    <tr>
+      <td width="89"><p>type </p></td>
+      <td width="71"><p>char </p></td>
+      <td width="210"><p>类型 </p></td>
+    </tr>
+    <tr>
+      <td width="89"><p>count </p></td>
+      <td width="71"><p>int </p></td>
+      <td width="210"><p>总数 </p></td>
+    </tr>
+    <tr>
+      <td width="89"><p>memo </p></td>
+      <td width="71"><p>varchar </p></td>
+      <td width="210"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname62" id="$linkname62"></a> type字段</p>
+  <table width="151" border="1" cellpadding="2" cellspacing="0">
+    <col width="53" />
+    <col width="90" />
+    <tr>
+      <th width="53"> <p>type</p></th>
+      <th width="90"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="53"><p>account</p></td>
+      <td width="90"><p>账号数</p></td>
+    </tr>
+    <tr>
+      <td width="53"><p>mac</p></td>
+      <td width="90"><p>mac数(暂无)</p></td>
+    </tr>
+    <tr>
+      <td width="53"><p>ip</p></td>
+      <td width="90"><p>ip数</p></td>
+    </tr>
+    <tr>
+      <td width="53"><p>duel</p></td>
+      <td width="90"><p>对战数</p></td>
+    </tr>
+    <tr>
+      <td width="53"><p>train</p></td>
+      <td width="90"><p>训练数</p></td>
+    </tr>
+    <tr>
+      <td width="53"><p>guide</p></td>
+      <td width="90"><p>指引数</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="guidelog战役日志" id="guidelog战役日志"></a> guide_log战役日志</h4>
+<div id="answer-1669763623" dir="ltr">
+  <table width="290" border="1" cellpadding="2" cellspacing="0">
+    <col width="96" />
+    <col width="72" />
+    <col width="110" />
+    <tr>
+      <th width="96"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="110"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="96"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="96"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="96"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="110"><p>区组(暂无) </p></td>
+    </tr>
+    <tr>
+      <td width="96"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="96"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>角色 </p></td>
+    </tr>
+    <tr>
+      <td width="96"><p>level </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>等级 </p></td>
+    </tr>
+    <tr>
+      <td width="96"><p>money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>金币 </p></td>
+    </tr>
+    <tr>
+      <td width="96"><p>remain_score </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>积分 </p></td>
+    </tr>
+    <tr>
+      <td width="96"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="110"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="96"><p>action </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>行为 </p></td>
+    </tr>
+    <tr>
+      <td width="96"><p>guide_section </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>战役编号 </p></td>
+    </tr>
+    <tr>
+      <td width="96"><p>guide_result </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>战役结果 </p></td>
+    </tr>
+    <tr>
+      <td width="96"><p>duel_rid </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>战役iid </p></td>
+    </tr>
+    <tr>
+      <td width="96"><p>para1 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="110"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="96"><p>para2 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="110"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="96"><p>para3 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="110"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="96"><p>memo </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="110"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname65" id="$linkname65"></a> action字段</p>
+  <table width="141" border="1" cellpadding="2" cellspacing="0">
+    <col width="47" />
+    <col width="86" />
+    <tr>
+      <th width="47"> <p>action</p></th>
+      <th width="86"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="47"><p>start</p></td>
+      <td width="86"><p>战役开始</p></td>
+    </tr>
+    <tr>
+      <td width="47"><p>leave</p></td>
+      <td width="86"><p>战役离开</p></td>
+    </tr>
+    <tr>
+      <td width="47"><p>end</p></td>
+      <td width="86"><p>战役结束</p></td>
+    </tr>
+    <tr>
+      <td width="47"><p>unlock</p></td>
+      <td width="86"><p>解锁新战役</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname66" id="$linkname66"></a> guide_result字段</p>
+  <table width="202" border="1" cellpadding="2" cellspacing="0">
+    <col width="88" />
+    <col width="106" />
+    <tr>
+      <th width="88"> <p>guide_result</p></th>
+      <th width="106"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="88"><p>1 </p></td>
+      <td width="106"><p>胜利 </p></td>
+    </tr>
+    <tr>
+      <td width="88"><p>0 </p></td>
+      <td width="106"><p>失败 </p></td>
+    </tr>
+    <tr>
+      <td width="88"><p>编号(如102)</p></td>
+      <td width="106"><p>新解锁的战役 </p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="invitelog邀请好友日志" id="invitelog邀请好友日志"></a> invite_log邀请好友日志</h4>
+<div id="answer-1383959094" dir="ltr">
+  <table width="252" border="1" cellpadding="2" cellspacing="0">
+    <col width="82" />
+    <col width="72" />
+    <col width="86" />
+    <tr>
+      <th width="82"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="86"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="82"><p>id</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="86"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>update_time</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="86"><p>邀请时间</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>account</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="86"><p>玩家账号</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>name</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="86"><p>角色</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>level</p></td>
+      <td width="72"><p>tinyint</p></td>
+      <td width="86"><p>等级</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>insider</p></td>
+      <td width="72"><p>tinyint</p></td>
+      <td width="86"><p>是否会员</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>blue_VIP</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="86"><p>是否蓝钻</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>ip</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="86"><p>玩家IP</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>mac</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="86"><p>玩家mac</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>toaccount</p></td>
+      <td width="72"><p>&nbsp;</p></td>
+      <td width="86"><p>邀请的账号</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>memo</p></td>
+      <td width="72"><p>varchar</p></td>
+      <td width="86"><p>备注</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname69" id="$linkname69"></a> blue_VIP字段</p>
+  <table width="178" border="1" cellpadding="2" cellspacing="0">
+    <col width="68" />
+    <col width="102" />
+    <tr>
+      <th width="68"> <p>blue_VIP</p></th>
+      <th width="102"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="68"><p>0</p></td>
+      <td width="102"><p>非蓝钻</p></td>
+    </tr>
+    <tr>
+      <td width="68"><p>1-7</p></td>
+      <td width="102"><p>对应蓝钻等级</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="itemlog物品日志" id="itemlog物品日志"></a> item_log物品日志</h4>
+<div id="answer-842951549" dir="ltr">
+  <table width="632" border="1" cellpadding="2" cellspacing="0">
+    <col width="86" />
+    <col width="70" />
+    <col width="465" />
+    <tr>
+      <th width="86"> <p>字段 </p></th>
+      <th width="70"> <p>数值类型 </p></th>
+      <th width="465"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="86"><p>id </p></td>
+      <td width="70"><p>int </p></td>
+      <td width="465"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>update_time </p></td>
+      <td width="70"><p>char </p></td>
+      <td width="465"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>dist_name </p></td>
+      <td width="70"><p>varchar </p></td>
+      <td width="465"><p>区组(暂无)名字 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>account </p></td>
+      <td width="70"><p>char </p></td>
+      <td width="465"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>name </p></td>
+      <td width="70"><p>char </p></td>
+      <td width="465"><p>角色 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>level </p></td>
+      <td width="70"><p>tinyint </p></td>
+      <td width="465"><p>等级 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>insider </p></td>
+      <td width="70"><p>tinyint </p></td>
+      <td width="465"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>action </p></td>
+      <td width="70"><p>char </p></td>
+      <td width="465"><p>行为 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>item_type </p></td>
+      <td width="70"><p>char </p></td>
+      <td width="465"><p>物品类型 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>item_from </p></td>
+      <td width="70"><p>char </p></td>
+      <td width="465"><p>物品来源 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>item_name </p></td>
+      <td width="70"><p>varchar </p></td>
+      <td width="465"><p>物品名称 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>item_iid </p></td>
+      <td width="70"><p>int </p></td>
+      <td width="465"><p>物品 IID </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>item_num </p></td>
+      <td width="70"><p>int </p></td>
+      <td width="465"><p>物品数量，当item_from=item_apply_add时，记录使用之前玩家身上剩余双倍积分次数 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>transfer_enable </p></td>
+      <td width="70"><p>tinyint </p></td>
+      <td width="465"><p>是否可交易 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>restrain </p></td>
+      <td width="70"><p>tinyint </p></td>
+      <td width="465"><p>是否限制（限时限次） </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>restrain_time </p></td>
+      <td width="70"><p>bigint </p></td>
+      <td width="465"><p>限制时间、次数</p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>para1 </p></td>
+      <td width="70"><p>varchar </p></td>
+      <td width="465"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>para2 </p></td>
+      <td width="70"><p>varchar </p></td>
+      <td width="465"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>para3 </p></td>
+      <td width="70"><p>varchar </p></td>
+      <td width="465"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>blue_VIP</p></td>
+      <td width="70"><p>int</p></td>
+      <td width="465"><p>是否蓝钻</p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>memo </p></td>
+      <td width="70"><p>text </p></td>
+      <td width="465"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname72" id="$linkname72"></a> action字段</p>
+  <table width="99" border="1" cellpadding="2" cellspacing="0">
+    <col width="52" />
+    <col width="39" />
+    <tr>
+      <th width="52"> <p>action</p></th>
+      <th width="39"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="52"><p>add</p></td>
+      <td width="39"><p>添加</p></td>
+    </tr>
+    <tr>
+      <td width="52"><p>remove</p></td>
+      <td width="39"><p>移除</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname73" id="$linkname73"></a> item_type字段</p>
+  <table width="204" border="1" cellpadding="2" cellspacing="0">
+    <col width="126" />
+    <col width="70" />
+    <tr>
+      <th width="126"> <p>字段 </p></th>
+      <th width="70"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="126"><p>card_back </p></td>
+      <td width="70"><p>卡背</p></td>
+    </tr>
+    <tr>
+      <td width="126"><p>card_baggage </p></td>
+      <td width="70"><p>卡包</p></td>
+    </tr>
+    <tr>
+      <td width="126"><p>gongn </p></td>
+      <td width="70"><p>功能物品</p></td>
+    </tr>
+    <tr>
+      <td width="126"><p>new_card_baggage</p></td>
+      <td width="70"><p>新手礼包</p></td>
+    </tr>
+    <tr>
+      <td width="126"><p>new_commer </p></td>
+      <td width="70"><p>升级礼包</p></td>
+    </tr>
+    <tr>
+      <td width="126"><p>xiaog</p></td>
+      <td width="70"><p>功能物品</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname74" id="$linkname74"></a> item_from字段</p>
+  <table width="568" border="1" cellpadding="2" cellspacing="0">
+    <col width="106" />
+    <col width="454" />
+    <tr>
+      <th width="106"> <p>item_from</p></th>
+      <th width="454"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="106"><p>apply</p></td>
+      <td width="454"><p>消耗使用</p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>buy</p></td>
+      <td width="454"><p>购买</p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>gm</p></td>
+      <td width="454"><p>gm操作</p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>newcomer</p></td>
+      <td width="454"><p>新手礼包</p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>trade</p></td>
+      <td width="454"><p>交易</p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>task_bonus</p></td>
+      <td width="454"><p>任务奖励</p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>remove_auction</p></td>
+      <td width="454"><p>取消拍卖</p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>auction</p></td>
+      <td width="454"><p>拍卖</p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>card_collection</p></td>
+      <td width="454"><p>集卡奖励</p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>duel</p></td>
+      <td width="454"><p>对战</p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>competition </p></td>
+      <td width="454"><p>竞赛</p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>activity</p></td>
+      <td width="454"><p>活动</p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>destroy</p></td>
+      <td width="454"><p>时间到、次数使用完成消失，用于次数、时间限制的道具</p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>delete</p></td>
+      <td width="454"><p>删除道具，主要用于熔炼炉</p></td>
+    </tr>
+    <tr>
+      <td width="106"><p>item_apply_add</p></td>
+      <td width="454"><p>道具后，对应道具次数或是时间增加，用于次数、时间限制的道</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname75" id="$linkname75"></a> transfer_enable字段</p>
+  <table width="173" border="1" cellpadding="2" cellspacing="0">
+    <col width="111" />
+    <col width="54" />
+    <tr>
+      <th width="111"> <p>transfer_enable</p></th>
+      <th width="54"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="111"><p>0</p></td>
+      <td width="54"><p>不交易</p></td>
+    </tr>
+    <tr>
+      <td width="111"><p>1</p></td>
+      <td width="54"><p>可交易</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname76" id="$linkname76"></a> restrain字段</p>
+  <table width="119" border="1" cellpadding="2" cellspacing="0">
+    <col width="57" />
+    <col width="54" />
+    <tr>
+      <th width="57"> <p>restrain</p></th>
+      <th width="54"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="57"><p>0</p></td>
+      <td width="54"><p>不限制</p></td>
+    </tr>
+    <tr>
+      <td width="57"><p>1</p></td>
+      <td width="54"><p>限时</p></td>
+    </tr>
+    <tr>
+      <td width="57"><p>2</p></td>
+      <td width="54"><p>限次</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname77" id="$linkname77"></a> blue_VIP字段</p>
+  <table width="178" border="1" cellpadding="2" cellspacing="0">
+    <col width="68" />
+    <col width="102" />
+    <tr>
+      <th width="68"> <p>blue_VIP</p></th>
+      <th width="102"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="68"><p>0</p></td>
+      <td width="102"><p>非蓝钻</p></td>
+    </tr>
+    <tr>
+      <td width="68"><p>1-7</p></td>
+      <td width="102"><p>对应蓝钻等级</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4>levelup_log升级日志</h4>
+<div id="answer-1441104797" dir="ltr">
+  <table width="293" border="1" cellpadding="2" cellspacing="0">
+    <col width="93" />
+    <col width="72" />
+    <col width="116" />
+    <tr>
+      <th width="93"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="116"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="93"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="116"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="116"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="116"><p>区组(暂无)名字 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="116"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="116"><p>角色 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>level </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="116"><p>等级 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="116"><p>金币 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>remain_score </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="116"><p>积分 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>insider </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="116"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>is_new_user</p></td>
+      <td width="72"><p>int </p></td>
+      <td width="116"><p>是否新手 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>last_level </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="116"><p>升级前等级 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>cost_time</p></td>
+      <td width="72"><p>int </p></td>
+      <td width="116"><p>升级花费时间 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>para1 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="116"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>para2 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="116"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>para3 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="116"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>memo </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="116"><p>备注 </p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="loginlog登录日志" id="loginlog登录日志"></a> login_log登录日志</h4>
+<div id="answer-56715970" dir="ltr">
+  <table width="400" border="1" cellpadding="2" cellspacing="0">
+    <col width="110" />
+    <col width="72" />
+    <col width="206" />
+    <tr>
+      <th width="110"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="206"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="110"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="206"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>login_mode </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="206"><p>登入/登出模式，具体见右边 </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>start_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="206"><p>玩家登录时间 </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>end_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="206"><p>玩家下线时间 </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="206"><p>区组(暂无) </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="206"><p>玩家账号 </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="206"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>duration </p></td>
+      <td width="72"><p>bigint </p></td>
+      <td width="206"><p>在线时长 </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>date</p></td>
+      <td width="72"><p>int </p></td>
+      <td width="206"><p>登录时间</p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>screen</p></td>
+      <td width="72"><p>char </p></td>
+      <td width="206"><p>玩家屏幕分倍率 </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>os</p></td>
+      <td width="72"><p>char </p></td>
+      <td width="206"><p>玩家操作系统 </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>browser_name</p></td>
+      <td width="72"><p>char </p></td>
+      <td width="206"><p>玩家浏览器名称 </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>browser_version</p></td>
+      <td width="72"><p>char </p></td>
+      <td width="206"><p>玩家浏览器版本 </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>ip </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="206"><p>玩家登入/登出ip地址 </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="206"><p>金币 </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>remain_score </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="206"><p>积分 </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>level </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="206"><p>等级 </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>camp </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="206"><p>阵营 </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>memo </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="206"><p>备注 </p></td>
+    </tr>
+    <tr>
+      <td width="110"><p>blue_VIP</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="206"><p>是否蓝钻</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname82" id="$linkname82"></a> login_mode字段</p>
+  <table width="138" border="1" cellpadding="2" cellspacing="0">
+    <col width="87" />
+    <col width="43" />
+    <tr>
+      <th width="87"> <p>login_mode </p></th>
+      <th width="43"> <p>含义 </p></th>
+    </tr>
+    <tr>
+      <td width="87"><p>0 </p></td>
+      <td width="43"><p>登录 </p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>1 </p></td>
+      <td width="43"><p>退出 </p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>2 </p></td>
+      <td width="43"><p>顶号 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname83" id="$linkname83"></a> blue_VIP字段</p>
+  <table width="178" border="1" cellpadding="2" cellspacing="0">
+    <col width="68" />
+    <col width="102" />
+    <tr>
+      <th width="68"> <p>blue_VIP</p></th>
+      <th width="102"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="68"><p>0</p></td>
+      <td width="102"><p>非蓝钻</p></td>
+    </tr>
+    <tr>
+      <td width="68"><p>1-7</p></td>
+      <td width="102"><p>对应蓝钻等级</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="moneylog金钱日志" id="moneylog金钱日志"></a> money_log金钱日志</h4>
+<div id="answer-1773771422" dir="ltr">
+  <table width="286" border="1" cellpadding="2" cellspacing="0">
+    <col width="86" />
+    <col width="72" />
+    <col width="116" />
+    <tr>
+      <th width="86"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="116"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="86"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="116"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="116"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="116"><p>区组(暂无)名字 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="116"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="116"><p>角色名字 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>level </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="116"><p>等级 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="116"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>type </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="116"><p>记录类型 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>action </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="116"><p>行为 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>money_type </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="116"><p>金钱类型 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="116"><p>花费金额 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>left_money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="116"><p>剩余金额 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>para1 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="116"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>para2 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="116"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>para3 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="116"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>memo </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="116"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname86" id="$linkname86"></a> money_type字段</p>
+  <table width="214" border="1" cellpadding="2" cellspacing="0">
+    <col width="87" />
+    <col width="51" />
+    <col width="26" />
+    <col width="34" />
+    <tr>
+      <th width="87"> <p>money_type</p></th>
+      <th width="51"> <p>含义</p></th>
+      <td width="26" valign="top"></td>
+      <td width="34" valign="top"></td>
+    </tr>
+    <tr>
+      <td width="87"><p>gold</p></td>
+      <td width="51"><p>金币</p></td>
+      <td width="26" valign="top"></td>
+      <td width="34" valign="top"></td>
+    </tr>
+    <tr>
+      <td width="87"><p>Silver</p></td>
+      <td width="51"><p>银票</p></td>
+      <td width="26" valign="top"></td>
+      <td width="34" valign="top"></td>
+    </tr>
+    <tr>
+      <td width="87"><p>QB</p></td>
+      <td width="51"><p>Q币</p></td>
+      <th width="26"> <p>QB</p></th>
+      <td width="34"><p>Q币</p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>caift</p></td>
+      <td width="51"><p>财付通</p></td>
+      <td colspan="2" width="64" valign="top"></td>
+    </tr>
+  </table>
+  <table width="94" border="1" cellpadding="2" cellspacing="0">
+    <col width="32" />
+    <col width="54" />
+    <tr>
+      <td width="32"><p>caift</p></td>
+      <td width="54"><p>财付通</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname87" id="$linkname87"></a> type字段</p>
+  <table width="81" border="1" cellpadding="2" cellspacing="0">
+    <col width="34" />
+    <col width="39" />
+    <tr>
+      <th width="34"> <p>type</p></th>
+      <th width="39"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="34"><p>0</p></td>
+      <td width="39"><p>添加</p></td>
+    </tr>
+    <tr>
+      <td width="34"><p>1</p></td>
+      <td width="39"><p>减少</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname88" id="$linkname88"></a> action字段</p>
+  <table width="228" border="1" cellpadding="2" cellspacing="0">
+    <col width="102" />
+    <col width="118" />
+    <tr>
+      <th width="102"> <p>action</p></th>
+      <th width="118"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="102"><p>gm</p></td>
+      <td width="118"><p>gm操作</p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>system</p></td>
+      <td width="118"><p>系统奖励或惩罚</p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>guide</p></td>
+      <td width="118"><p>指引</p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>trade</p></td>
+      <td width="118"><p>交易</p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>buy</p></td>
+      <td width="118"><p>购买</p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>newcomer</p></td>
+      <td width="118"><p>新手奖励</p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>card_collection</p></td>
+      <td width="118"><p>集卡奖励</p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>task</p></td>
+      <td width="118"><p>任务</p></td>
+    </tr>
+    <tr>
+      <td width="102"><p>level_up</p></td>
+      <td width="118"><p>升级奖励</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="newbielog新手日志" id="newbielog新手日志"></a> newbie_log新手日志</h4>
+<div id="answer-1113608230" dir="ltr">
+  <table width="261" border="1" cellpadding="2" cellspacing="0">
+    <col width="93" />
+    <col width="72" />
+    <col width="84" />
+    <tr>
+      <th width="93"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="84"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="93"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="84"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="84"><p>记录时间 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="84"><p>区组(暂无) </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="84"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="84"><p>角色名 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>camp </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="84"><p>阵营 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>level </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="84"><p>当前等级 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="84"><p>金钱 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>remain_score </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="84"><p>积分 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="84"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>record_type </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="84"><p>记录类型 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>all_cards </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="84"><p>所有卡片 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>group_cards </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="84"><p>卡组卡片 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>para1 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="84"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>para2 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="84"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>para3 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="84"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>memo </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="84"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname91" id="$linkname91"></a> record_type字段</p>
+  <table width="632" border="1" cellpadding="2" cellspacing="0">
+    <col width="72" />
+    <col width="269" />
+    <col width="71" />
+    <col width="205" />
+    <tr>
+      <th width="72"> <p>record_type </p></th>
+      <td width="269"><p>含义 </p></td>
+      <th width="71"> <p>record_type </p></th>
+      <td width="205"><p>含义 </p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>0 </p></td>
+      <td width="269"><p>登录游戏(已有角色) </p></td>
+      <td width="71"><p>&nbsp;</p></td>
+      <td width="205"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>100 </p></td>
+      <td width="269"><p>创建角色 </p></td>
+      <td width="71"><p>&nbsp;</p></td>
+      <td width="205"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>101 </p></td>
+      <td width="269"><p>选择阵营 </p></td>
+      <td width="71"><p>&nbsp;</p></td>
+      <td width="205"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>102 </p></td>
+      <td width="269"><p>登录主界面 </p></td>
+      <td width="71"><p>&nbsp;</p></td>
+      <td width="205"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>200 </p></td>
+      <td width="269"><p>进入新手指引 </p></td>
+      <td width="71"><p>&nbsp;</p></td>
+      <td width="205"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>201 </p></td>
+      <td width="269"><p>跳过新手指引(跳过之后会直接获得301-308的指引任务) </p></td>
+      <td width="71"><p>&nbsp;</p></td>
+      <td width="205"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>301 </p></td>
+      <td width="269"><p>获得第一个指引任务（战役一） </p></td>
+      <td width="71"><p>801 </p></td>
+      <td width="205"><p>完成第一个指引任务（战役一） </p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>302 </p></td>
+      <td width="269"><p>获得第二个指引任务（战役二） </p></td>
+      <td width="71"><p>802 </p></td>
+      <td width="205"><p>完成第二个指引任务（战役二） </p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>303 </p></td>
+      <td width="269"><p>获得第三个指引任务（战役三） </p></td>
+      <td width="71"><p>803 </p></td>
+      <td width="205"><p>完成第三个指引任务（战役三） </p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>304 </p></td>
+      <td width="269"><p>获得第四个指引任务（购买任务） </p></td>
+      <td width="71"><p>804 </p></td>
+      <td width="205"><p>完成第四个指引任务（购买任务） </p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>305 </p></td>
+      <td width="269"><p>获得第五个指引任务（战役四） </p></td>
+      <td width="71"><p>805 </p></td>
+      <td width="205"><p>完成第五个指引任务（战役四） </p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>306 </p></td>
+      <td width="269"><p>获得第六个指引任务（战役五） </p></td>
+      <td width="71"><p>806 </p></td>
+      <td width="205"><p>完成第六个指引任务（战役五） </p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>307 </p></td>
+      <td width="269"><p>获得第七个指引任务（战役六） </p></td>
+      <td width="71"><p>807 </p></td>
+      <td width="205"><p>完成第七个指引任务（战役六） </p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>308 </p></td>
+      <td width="269"><p>获得第八个指引任务（战役七）</p></td>
+      <td width="71"><p>808 </p></td>
+      <td width="205"><p>完成第八个指引任务（战役七） </p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>1000 </p></td>
+      <td width="269"><p>完成主线任务 </p></td>
+      <td width="71"><p>&nbsp;</p></td>
+      <td width="205"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>400 </p></td>
+      <td width="269"><p>离开游戏 </p></td>
+      <td width="71"><p>&nbsp;</p></td>
+      <td width="205"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="72"><p>500 </p></td>
+      <td width="269"><p>第一次升级 </p></td>
+      <td width="71"><p>&nbsp;</p></td>
+      <td width="205"><p>&nbsp;</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="orderlog订单日志" id="orderlog订单日志"></a> order_log订单日志</h4>
+<div id="answer-173415659" dir="ltr">
+  <table width="160" border="1" cellpadding="2" cellspacing="0">
+    <col width="82" />
+    <col width="70" />
+    <tr>
+      <th width="82"> <p>字段</p></th>
+      <th width="70"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="82"><p>id</p></td>
+      <td width="70"><p>序号</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>update_time</p></td>
+      <td width="70"><p>记录时间</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>account</p></td>
+      <td width="70"><p>账号</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>name</p></td>
+      <td width="70"><p>角色名</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>level</p></td>
+      <td width="70"><p>等级</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>insider</p></td>
+      <td width="70"><p>会员标识</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>type</p></td>
+      <td width="70"><p>订单类型</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>action</p></td>
+      <td width="70"><p>行为</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>money_type</p></td>
+      <td width="70"><p>金钱类型</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>value</p></td>
+      <td width="70"><p>价值</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>item_name</p></td>
+      <td width="70"><p>物品名称</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>item_id</p></td>
+      <td width="70"><p>物品 IID</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>item_num</p></td>
+      <td width="70"><p>物品数量</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>rid</p></td>
+      <td width="70"><p>订单号</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>blue_vip</p></td>
+      <td width="70"><p>蓝钻等级</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>memo</p></td>
+      <td width="70"><p>备注</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname94" id="$linkname94"></a> type字段</p>
+  <table width="224" border="1" cellpadding="2" cellspacing="0">
+    <col width="34" />
+    <col width="182" />
+    <tr>
+      <th width="34"> <p>type</p></th>
+      <th width="182"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="34"><p>1</p></td>
+      <td width="182"><p>腾讯向我方确认订单号</p></td>
+    </tr>
+    <tr>
+      <td width="34"><p>2</p></td>
+      <td width="182"><p>我方向腾讯确认是否成功</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname95" id="$linkname95"></a> action字段</p>
+  <table width="92" border="1" cellpadding="2" cellspacing="0">
+    <col width="45" />
+    <col width="39" />
+    <tr>
+      <th width="45"> <p>action</p></th>
+      <th width="39"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="45"><p>buy</p></td>
+      <td width="39"><p>购买</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname96" id="$linkname96"></a> money_type字段</p>
+  <table width="149" border="1" cellpadding="2" cellspacing="0">
+    <col width="87" />
+    <col width="54" />
+    <tr>
+      <th width="87"> <p>money_type</p></th>
+      <th width="54"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="87"><p>gold</p></td>
+      <td width="54"><p>金币</p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>QB</p></td>
+      <td width="54"><p>Q币</p></td>
+    </tr>
+    <tr>
+      <td width="87"><p>caift</p></td>
+      <td width="54"><p>财付通</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="ranklog榜单日志" id="ranklog榜单日志"></a> rank_log榜单日志</h4>
+<div id="answer-1002177985" dir="ltr">
+  <table width="241" border="1" cellpadding="2" cellspacing="0">
+    <col width="82" />
+    <col width="72" />
+    <col width="75" />
+    <tr>
+      <th width="82"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="75"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="82"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="75"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>update_time</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="75"><p>记录时间</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>account</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="75"><p>账号</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>name</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="75"><p>角色名</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>level</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="75"><p>等级</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>money</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="75"><p>金币</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>insider</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="75"><p>是否会员</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>type</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="75"><p>榜单类别</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>value</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="75"><p>对应值</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>rank</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="75"><p>排名</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>memo </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="75"><p>预留 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname99" id="$linkname99"></a> type字段</p>
+  <table width="252" border="1" cellpadding="2" cellspacing="0">
+    <col width="142" />
+    <col width="102" />
+    <tr>
+      <th width="142"> <p>type</p></th>
+      <th width="102"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="142"><p>activity_rank</p></td>
+      <td width="102"><p>活跃</p></td>
+    </tr>
+    <tr>
+      <td width="142"><p>ac_caowei</p></td>
+      <td width="102"><p>曹魏争霸赛</p></td>
+    </tr>
+    <tr>
+      <td width="142"><p>ac_chijiuzhan</p></td>
+      <td width="102"><p>持久战</p></td>
+    </tr>
+    <tr>
+      <td width="142"><p>ac_kuaisu</p></td>
+      <td width="102"><p>快速反应</p></td>
+    </tr>
+    <tr>
+      <td width="142"><p>ac_nizhuan</p></td>
+      <td width="102"><p>逆转战</p></td>
+    </tr>
+    <tr>
+      <td width="142"><p>ac_pinmin</p></td>
+      <td width="102"><p>平民英雄活动</p></td>
+    </tr>
+    <tr>
+      <td width="142"><p>ac_shandianzhan</p></td>
+      <td width="102"><p>闪电战</p></td>
+    </tr>
+    <tr>
+      <td width="142"><p>ac_shuhan</p></td>
+      <td width="102"><p>蜀汉争霸赛</p></td>
+    </tr>
+    <tr>
+      <td width="142"><p>ac_sunwu</p></td>
+      <td width="102"><p>孙吴争霸赛</p></td>
+    </tr>
+    <tr>
+      <td width="142"><p>ac_wugu</p></td>
+      <td width="102"><p>五谷丰登</p></td>
+    </tr>
+    <tr>
+      <td width="142"><p>ac_yinka</p></td>
+      <td width="102"><p>银卡战</p></td>
+    </tr>
+    <tr>
+      <td width="142"><p>card_collection_num</p></td>
+      <td width="102"><p>集卡册</p></td>
+    </tr>
+    <tr>
+      <td width="142"><p>competition_exploit</p></td>
+      <td width="102"><p>竞赛</p></td>
+    </tr>
+    <tr>
+      <td width="142"><p>comprehensive_score</p></td>
+      <td width="102"><p>综合</p></td>
+    </tr>
+    <tr>
+      <td width="142"><p>official_rank</p></td>
+      <td width="102"><p>对战</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="registerlog注册日志" id="registerlog注册日志"></a> register_log注册日志</h4>
+<div id="answer-1217142095" dir="ltr">
+  <table width="632" border="1" cellpadding="2" cellspacing="0">
+    <col width="71" />
+    <col width="70" />
+    <col width="479" />
+    <tr>
+      <th width="71"> <p>字段 </p></th>
+      <th width="70"> <p>数值类型 </p></th>
+      <th width="479"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="71"><p>id</p></td>
+      <td width="70"><p>int</p></td>
+      <td width="479"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="71"><p>update_time</p></td>
+      <td width="70"><p>char</p></td>
+      <td width="479"><p>注册时间</p></td>
+    </tr>
+    <tr>
+      <td width="71"><p>account</p></td>
+      <td width="70"><p>char</p></td>
+      <td width="479"><p>玩家账号</p></td>
+    </tr>
+    <tr>
+      <td width="71"><p>type</p></td>
+      <td width="70"><p>char</p></td>
+      <td width="479"><p>注册类型</p></td>
+    </tr>
+    <tr>
+      <td width="71"><p>source</p></td>
+      <td width="70"><p>string(32)</p></td>
+      <td width="479"><p>注册操作来源，当type=1时，direct直接点击  				注册，当type=2时，需  				记录好友账号， 是哪位好友的邀请</p></td>
+    </tr>
+    <tr>
+      <td width="71"><p>Bule_VIP</p></td>
+      <td width="70"><p>int</p></td>
+      <td width="479"><p>是否蓝钻</p></td>
+    </tr>
+    <tr>
+      <td width="71"><p>ip</p></td>
+      <td width="70"><p>char</p></td>
+      <td width="479"><p>注册IP</p></td>
+    </tr>
+    <tr>
+      <td width="71"><p>mac</p></td>
+      <td width="70"><p>char</p></td>
+      <td width="479"><p>注册mac</p></td>
+    </tr>
+    <tr>
+      <td width="71"><p>memo</p></td>
+      <td width="70"><p>varchar</p></td>
+      <td width="479"><p>备注</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname102" id="$linkname102"></a> type字段</p>
+  <table width="112" border="1" cellpadding="2" cellspacing="0">
+    <col width="34" />
+    <col width="70" />
+    <tr>
+      <th width="34"> <p>type</p></th>
+      <th width="70"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="34"><p>1</p></td>
+      <td width="70"><p>主动注册</p></td>
+    </tr>
+    <tr>
+      <td width="34"><p>2</p></td>
+      <td width="70"><p>邀请注册</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname103" id="$linkname103"></a> source&nbsp;字段</p>
+  <table width="435" border="1" cellpadding="2" cellspacing="0">
+    <col width="77" />
+    <col width="295" />
+    <col width="50" />
+    <tr>
+      <th width="77"> <p>source</p></th>
+      <th width="295"> <p>含义</p></th>
+      <th width="50"> <p>备注</p></th>
+    </tr>
+    <tr>
+      <td width="77"><p>direct</p></td>
+      <td width="295"><p>直接注册</p></td>
+      <td width="50"><p>type=1</p></td>
+    </tr>
+    <tr>
+      <td width="77"><p>ad_qqgame</p></td>
+      <td width="295"><p>QQ大厅广告进入</p></td>
+      <td width="50"><p>type=1</p></td>
+    </tr>
+    <tr>
+      <td width="77"><p>qq_friend</p></td>
+      <td width="295"><p>好友聊天对话框上 显是好友当前玩的游戏</p></td>
+      <td width="50"><p>type=1</p></td>
+    </tr>
+    <tr>
+      <td width="77"><p>ad_qq</p></td>
+      <td width="295"><p>QQ弹窗广告</p></td>
+      <td width="50"><p>type=1</p></td>
+    </tr>
+    <tr>
+      <td width="77"><p>好友账号</p></td>
+      <td width="295"><p>记录邀请的好友账 号信息</p></td>
+      <td width="50"><p>type=2</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname104" id="$linkname104"></a> blue_VIP字段</p>
+  <table width="178" border="1" cellpadding="2" cellspacing="0">
+    <col width="68" />
+    <col width="102" />
+    <tr>
+      <th width="68"> <p>blue_VIP</p></th>
+      <th width="102"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="68"><p>0 </p></td>
+      <td width="102"><p>非蓝钻</p></td>
+    </tr>
+    <tr>
+      <td width="68"><p>1-7 </p></td>
+      <td width="102"><p>对应蓝钻等级</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="scorelog积分相关日志" id="scorelog积分相关日志"></a> score_log积分相关日志</h4>
+<div id="answer-1419254386" dir="ltr">
+  <table width="363" border="1" cellpadding="2" cellspacing="0">
+    <col width="93" />
+    <col width="72" />
+    <col width="186" />
+    <tr>
+      <th width="93"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="186"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="93"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="186"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="186"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>dist_name </p></td>
+      <td width="72"><p>&nbsp;</p></td>
+      <td width="186"><p>区组(暂无) </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="186"><p>目标操作者账号 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="186"><p>角色名字 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>level </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="186"><p>等级 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="186"><p>金币 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>remain_score </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="186"><p>积分 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="186"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>type </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="186"><p>记录获得、消耗积分 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>action </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="186"><p>记录具体的行为 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>score_num </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="186"><p>记录获得或消耗积分数量 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>memo </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="186"><p>预留 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname107" id="$linkname107"></a> type字段</p>
+  <table width="112" border="1" cellpadding="2" cellspacing="0">
+    <col width="34" />
+    <col width="70" />
+    <tr>
+      <th width="34"> <p>type</p></th>
+      <th width="70"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="34"><p>0</p></td>
+      <td width="70"><p>获得积分</p></td>
+    </tr>
+    <tr>
+      <td width="34"><p>1</p></td>
+      <td width="70"><p>消耗积分</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname108" id="$linkname108"></a> action字段</p>
+  <table width="330" border="1" cellpadding="2" cellspacing="0">
+    <col width="140" />
+    <col width="182" />
+    <tr>
+      <th width="140"> <p>action</p></th>
+      <th width="182"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="140"><p>gm </p></td>
+      <td width="182"><p>gm操作</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>duel</p></td>
+      <td width="182"><p>对战</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>train </p></td>
+      <td width="182"><p>训练</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>duel_survive </p></td>
+      <td width="182"><p>生存模式</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>guide </p></td>
+      <td width="182"><p>指引战斗</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>chat </p></td>
+      <td width="182"><p>聊天消耗（暂时去掉了）</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>score_item </p></td>
+      <td width="182"><p>积分盒道具</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>buy </p></td>
+      <td width="182"><p>购买</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>newcomer </p></td>
+      <td width="182"><p>新手奖励</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>task </p></td>
+      <td width="182"><p>任务</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>competition_duel </p></td>
+      <td width="182"><p>竞赛</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>escape </p></td>
+      <td width="182"><p>逃跑</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>activity_duel </p></td>
+      <td width="182"><p>活动</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>auction_cost </p></td>
+      <td width="182"><p>拍卖费</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>remove_buy_failed </p></td>
+      <td width="182"><p>拍卖购买失败</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>remove_sell_success </p></td>
+      <td width="182"><p>拍卖卖出成功</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>login </p></td>
+      <td width="182"><p>登录奖励</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>auction_buy </p></td>
+      <td width="182"><p>拍卖购买</p></td>
+    </tr>
+    <tr>
+      <td width="140"><p>auction_sell </p></td>
+      <td width="182"><p>拍卖售出</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="tasklog任务指引日志" id="tasklog任务指引日志"></a> task_log任务指引日志</h4>
+<div id="answer-1413272298" dir="ltr">
+  <table width="284" border="1" cellpadding="2" cellspacing="0">
+    <col width="93" />
+    <col width="72" />
+    <col width="107" />
+    <tr>
+      <th width="93"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="107"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="93"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="107"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="107"><p>LOG生成时间 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="107"><p>区组(暂无) </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="107"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="107"><p>角色 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>level </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="107"><p>等级 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="107"><p>金币 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>remain_score </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="107"><p>积分 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>insider </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="107"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>record_type </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="107"><p>记录类型 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>task_id</p></td>
+      <td width="72"><p>int </p></td>
+      <td width="107"><p>任务号 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>bonus </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="107"><p>奖励 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>para1 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="107"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>para2 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="107"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>para3 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="107"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="93"><p>memo </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="107"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname111" id="$linkname111"></a> record_type字段</p>
+  <table width="133" border="1" cellpadding="2" cellspacing="0">
+    <col width="86" />
+    <col width="39" />
+    <tr>
+      <th width="86"> <p>record_type</p></th>
+      <th width="39"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="86"><p>0</p></td>
+      <td width="39"><p>获得</p></td>
+    </tr>
+    <tr>
+      <td width="86"><p>1</p></td>
+      <td width="39"><p>完成</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname112" id="$linkname112"></a> task_result字段</p>
+  <table width="126" border="1" cellpadding="2" cellspacing="0">
+    <col width="79" />
+    <col width="39" />
+    <tr>
+      <th width="79"> <p>task_result</p></th>
+      <th width="39"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="79"><p>1</p></td>
+      <td width="39"><p>胜利</p></td>
+    </tr>
+    <tr>
+      <td width="79"><p>0</p></td>
+      <td width="39"><p>失败</p></td>
+    </tr>
+    <tr>
+      <td width="79"><p>2</p></td>
+      <td width="39"><p>逃跑</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="titlelog称号日志" id="titlelog称号日志"></a> title_log称号日志</h4>
+<div id="answer-988892957" dir="ltr">
+  <table width="241" border="1" cellpadding="2" cellspacing="0">
+    <col width="82" />
+    <col width="72" />
+    <col width="75" />
+    <tr>
+      <th width="82"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="75"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="82"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="75"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>update_time</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="75"><p>记录时间</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>account</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="75"><p>账号</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>name</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="75"><p>角色名</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>level</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="75"><p>等级</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>money</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="75"><p>金币</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>insider</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="75"><p>是否会员</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>title_type</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="75"><p>称号类别</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>title_id</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="75"><p>称号id</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>title_name</p></td>
+      <td width="72"><p>char</p></td>
+      <td width="75"><p>称号名称</p></td>
+    </tr>
+    <tr>
+      <td width="82"><p>memo </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="75"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname115" id="$linkname115"></a> title_type字段</p>
+  <table width="115" border="1" cellpadding="2" cellspacing="0">
+    <col width="68" />
+    <col width="39" />
+    <tr>
+      <th width="68"> <p>title_type</p></th>
+      <th width="39"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="68"><p>chuanqi</p></td>
+      <td width="39"><p>传奇</p></td>
+    </tr>
+    <tr>
+      <td width="68"><p>quanwei</p></td>
+      <td width="39"><p>权位</p></td>
+    </tr>
+    <tr>
+      <td width="68"><p>wenguan</p></td>
+      <td width="39"><p>文官</p></td>
+    </tr>
+    <tr>
+      <td width="68"><p>wuguan</p></td>
+      <td width="39"><p>武官</p></td>
+    </tr>
+  </table>
+</div>
+<hr/>
+<h4><a name="tradelog交易日志" id="tradelog交易日志"></a> trade_log交易日志</h4>
+<div id="answer-385880395" dir="ltr">
+  <table width="399" border="1" cellpadding="2" cellspacing="0">
+    <col width="135" />
+    <col width="72" />
+    <col width="180" />
+    <tr>
+      <th width="135"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="180"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="135"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="180"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="180"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="180"><p>区组(暂无)名字 </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="180"><p>送出方账号(物品原主人) </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="180"><p>送出方账号(物品原主人) </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>level </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="180"><p>送出方玩家等级 </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>insider</p></td>
+      <td width="72"><p>int</p></td>
+      <td width="180"><p>是否会员</p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>ip_address</p></td>
+      <td width="72"><p>char </p></td>
+      <td width="180"><p>交易出IP地址 </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>type </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="180"><p>单向或等价交易 </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>target_account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="180"><p>接收方账号(物品新主人) </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>target_name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="180"><p>接收方账号(物品新主人) </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>target_level </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="180"><p>接收方玩家等级 </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>target_ip</p></td>
+      <td width="72"><p>char </p></td>
+      <td width="180"><p>接收方IP地址 </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>add_money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="180"><p>我方交易所得金钱 </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>remove_money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="180"><p>我方交易所送出的金钱 </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>add_goods_info </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="180"><p>我方交易所得商品 </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>remove_goods_info </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="180"><p>我方交易所送出的商品 </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>para1 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="180"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>para2 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="180"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>para3 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="180"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="135"><p>memo </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="180"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname118" id="$linkname118"></a> type字段</p>
+  <table width="113" border="1" cellpadding="2" cellspacing="0">
+    <col width="34" />
+    <col width="71" />
+    <tr>
+      <th width="34"> <p>type</p></th>
+      <th width="71"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <th width="34"> <p>0</p></th>
+      <th width="71"> <p>单向交易</p></th>
+    </tr>
+    <tr>
+      <th width="34"> <p>1</p></th>
+      <th width="71"> <p>双向交易</p></th>
+    </tr>
+  </table>
+</div>
+<hr/>
+<hr/>
+<h4><a name="trainlog训练日志" id="trainlog训练日志"></a> train_log训练日志</h4>
+<div id="answer-626149775" dir="ltr">
+  <table width="308" border="1" cellpadding="2" cellspacing="0">
+    <col width="114" />
+    <col width="72" />
+    <col width="110" />
+    <tr>
+      <th width="114"> <p>字段 </p></th>
+      <th width="72"> <p>数值类型 </p></th>
+      <th width="110"> <p>备注说明 </p></th>
+    </tr>
+    <tr>
+      <td width="114"><p>id </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>update_time </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>log生成的时间 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>dist_name </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="110"><p>区组(暂无) </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>account </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>账号 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>角色 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>level </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>等级 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>money </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>金币 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>remain_score </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>积分 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>insider </p></td>
+      <td width="72"><p>tinyint </p></td>
+      <td width="110"><p>是否会员 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>action </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>行为 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>train_section </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>训练编号 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>train_card_name </p></td>
+      <td width="72"><p>char </p></td>
+      <td width="110"><p>训练所用卡组 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>win_time </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>训练胜利次数 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>lose_time </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>训练失败次数 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>train_result </p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>训练结果 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>duel_rid</p></td>
+      <td width="72"><p>int </p></td>
+      <td width="110"><p>训练iid </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>para1 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="110"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>para2 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="110"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>para3 </p></td>
+      <td width="72"><p>varchar </p></td>
+      <td width="110"><p>备用 </p></td>
+    </tr>
+    <tr>
+      <td width="114"><p>memo </p></td>
+      <td width="72"><p>text </p></td>
+      <td width="110"><p>备注 </p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname121" id="$linkname121"></a> action字段</p>
+  <table width="123" border="1" cellpadding="2" cellspacing="0">
+    <col width="45" />
+    <col width="70" />
+    <tr>
+      <th width="45"> <p>action</p></th>
+      <th width="70"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="45"><p>start</p></td>
+      <td width="70"><p>训练开始</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>leave</p></td>
+      <td width="70"><p>训练离开</p></td>
+    </tr>
+    <tr>
+      <td width="45"><p>end</p></td>
+      <td width="70"><p>训练结束</p></td>
+    </tr>
+  </table>
+  <p><a name="$linkname122" id="$linkname122"></a> train_result字段</p>
+  <table width="131" border="1" cellpadding="2" cellspacing="0">
+    <col width="84" />
+    <col width="39" />
+    <tr>
+      <th width="84"> <p>train_result</p></th>
+      <th width="39"> <p>含义</p></th>
+    </tr>
+    <tr>
+      <td width="84"><p>1 </p></td>
+      <td width="39"><p>胜利</p></td>
+    </tr>
+    <tr>
+      <td width="84"><p>0 </p></td>
+      <td width="39"><p>失败</p></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
