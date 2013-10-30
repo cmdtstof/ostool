@@ -158,7 +158,7 @@ if(!isset($_GET['action'])){
 获得物品
 <table class='simpleList' border='1' cellspacing='0' cellpadding='5' rules='rows' >
 <?php
-  $strsql="SELECT * from item_log where item_from in ('competition','gm') ";
+  $strsql="SELECT * from item_log where item_from like '%competition%' ";
   if($_POST["name"]==""){
 		
   }else{

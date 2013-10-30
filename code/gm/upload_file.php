@@ -13,11 +13,13 @@ if ((($_FILES["file"]["type"] == "text/plain"))
 	}
 	else
 	{
-		$checkFileName = date('YmdHis',time()).".txt";
+		date_default_timezone_set('Asia/Shanghai');
+		//$checkFileName = date('YmdHis',time()).".txt";
 		iconv("utf-8","gb2312",$_FILES["file"]["name"]);
 		//echo "Upload: " . iconv("utf-8","gb2312",$_FILES["file"]["name"]). "<br />";
 		$encoding = mb_detect_encoding($_FILES["file"]["name"], array('GB2312','GBK','UTF-16','UCS-2','UTF-8','BIG5','ASCII'));
 		$checkFileName = date('YmdHis',time())."_".$_FILES["file"]["name"];
+		//$checkFileName = $_FILES["file"]["name"];
 		//$buffer  = substr($buffer,0,strlen($buffer)-2);
 		// echo "Type: " . $_FILES["file"]["type"] . "<br />";
 		// echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
@@ -163,8 +165,8 @@ function sendProps(filename){
 			success:function(result){
 				document.getElementById("dnshow1").style.display="none";
 				document.getElementById("dnshow2").style.display="none";
-				alert("上传结束");
-				window.location.href =  "sendPropsIndex.php";
+				alert("发送结束");
+				window.location.href =  "checkIndex.php";
 					
 			}
 			

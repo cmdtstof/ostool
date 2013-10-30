@@ -10,8 +10,9 @@
 $host = "s11.app100658054.qqopenapp.com";
 $port = 8004;
 
+ini_set('max_execution_time', '0');
 function gm_addCard($name,$prop,$n,$rem){
-	set_time_limit(10);
+	set_time_limit(0);
 	global $host;
 	global $port;
 	$openID = "9613523E247BD5BAD73C075EEC5FA2EE";
@@ -60,7 +61,7 @@ function gm_addCard($name,$prop,$n,$rem){
 }
 
 function gm_addScore($name,$n,$rem){
-	set_time_limit(10);
+	set_time_limit(0);
 	global $host;
 	global $port;
 	$openID = "9613523E247BD5BAD73C075EEC5FA2EE";
@@ -113,7 +114,7 @@ function gm_addScore($name,$n,$rem){
 
 
 function gm_addItem($name,$prop,$n,$rem){
-	set_time_limit(10);
+	set_time_limit(0);
 	global $host;
 	global $port;
 	$openID = "9613523E247BD5BAD73C075EEC5FA2EE";

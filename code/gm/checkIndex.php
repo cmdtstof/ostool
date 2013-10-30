@@ -17,10 +17,16 @@ if(mysql_num_rows($result)>0){
 	// 定位到第一条记录
 	mysql_data_seek($result, 0);
 	// 循环取出记录
+	$xh=0;
 	while ($row=mysql_fetch_row($result))
 	{
 		//$temp = substr($row[0],strpos($row[0], "/")+1,strlen($row[0]));
-		$showtable = $showtable."<tr><td><input type='radio' name='radiogroup' value='".$row[0]."'/></td><td>".$row[0]."</td><td>".$row[1]."</td></tr>";
+		$showtable = $showtable."<tr><td><input type='radio' name='radiogroup' value='".$row[0]."' ";
+		if($xh==0){
+			$showtable = $showtable." checked";
+		}
+		$showtable = $showtable."/></td><td>".$row[0]."</td><td>".$row[1]."</td></tr>";
+		$xh++;
 	}
 	$showtable = $showtable."</table>";
 	echo $showtable;
