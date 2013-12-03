@@ -13,6 +13,8 @@ function showDiv(div){
 
 <ul><a href="../tcg/onlinenum.php" target="mainFrame">当前在线</a>
 </ul>
+<ul><a href="../SOC.php" target="mainFrame">线服状况</a>
+</ul>
 
 <ul><a href="#" onClick="showDiv('sumDiv');">统计查询</a>
 <div id="sumDiv" style="display:none;">
