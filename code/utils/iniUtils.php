@@ -11,6 +11,7 @@ var $_settings = array();
     * @param unknown_type $var
     * @return unknown
     */
+	
        function get($var) {
          $var = explode('.', $var);
 
@@ -28,6 +29,7 @@ var $_settings = array();
        }
 
        function load($file) {
+	echo "12312";
             trigger_error ('Not yet implemented', E_USER_ERROR);
        }
 }
@@ -46,6 +48,7 @@ $settings->load('../config.ini');
 
 $commonset = new Settings_INI;
 $commonset->load('../common.ini'); 
-//echo 'INI: ' . $settings->get('db.host') . '';
+
+//echo 'INI: 1' . $settings->get('DB.host') . '';
 ?>
 
