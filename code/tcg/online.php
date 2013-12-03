@@ -19,13 +19,19 @@
    $result=mysql_query($strsql, $tcglogconn);
    $a = array();
    $b = array();
+   $c=0;
+   
    if(mysql_num_rows($result)>0){
 		mysql_data_seek($result, 0);
 		// 循环取出记录
+		
 		while ($row=mysql_fetch_row($result))
 		{
-		 array_unshift($a,substr($row[0],11,5));
-		 array_unshift($b,$row[1]);
+			if($c>0){
+				array_unshift($a,substr($row[0],11,5));
+				array_unshift($b,$row[1]);
+			}
+			$c++;
 		}
    }
    
