@@ -116,7 +116,7 @@ require '../utils/dbBackupUtils.php';
 	//echo $tcglogsql;
 	// 执行sql查询
     $result=mysql_query($tcglogsql, $tcglogconn);
-	echo $result;
+	//echo $result;
 	// 获取查询结果
     $row=mysql_fetch_row($result);
 	
@@ -145,7 +145,7 @@ require '../utils/dbBackupUtils.php';
 		mysql_select_db($backup_database, $backupconn);
 		$result=mysql_query($backsql, $backupconn);
 		// 获取查询结果
-		echo $result;
+		//echo $result;
 		$row=mysql_fetch_row($result);
 		
 		if(mysql_num_rows($result)>0){
@@ -185,7 +185,7 @@ require '../utils/dbBackupUtils.php';
 </table>
 
 <font color = "red">玩家基础数据有X张 </font>
-<table id='tab3' class='simpleList' border='1' cellspacing='0' cellpadding='5' rules='rows' ><tr><th>角色</th><th>卡牌iid</th><th>卡牌数量</th></tr>
+<table id='tab3' class='simpleList' border='1' cellspacing='0' cellpadding='5' rules='rows' ><tr><th>角色</th><th>卡牌iid</th><th>卡牌数量</th><th>绑定数量</th></tr>
 <?php 
   $strsql="SELECT info from role where 1=1 ";
   if($_POST["name"]==""){
@@ -235,6 +235,28 @@ require '../utils/dbBackupUtils.php';
 					}
 					
 			?>
+	</td><td>
+	<?php
+					$a1= strpos($row[$i],"['binding_cards']=");
+					//echo $a1;
+					$t1= substr($row[$i],$a1);
+					//echo $t1;
+					$a2= strpos($t1,"}");
+					//echo $a2;
+					$t2= substr($t1,0,$a2+1);
+					//echo $t2;
+					$len = strlen("[".$_POST["card_iid"]."]=");
+					$start  = strpos($t2,"[".$_POST["card_iid"]."]=");
+					if($start>0){
+						$subs = substr($t2,$start+$len);				
+						$end  = strpos($subs,",");
+						echo substr($subs,0,$end);
+						$count = $count+ substr($subs,0,$end);
+					}else{
+						echo "0";
+					}
+					
+			?>
 	</td>
 	<?php
 		  }
@@ -252,7 +274,7 @@ require '../utils/dbBackupUtils.php';
 </table>
 
 <font color = "red">玩家身上现有X张</font>
-<table id='tab2' class='simpleList' border='1' cellspacing='0' cellpadding='5' rules='rows' ><tr><th>角色</th><th>卡牌iid</th><th>卡牌数量</th></tr>
+<table id='tab2' class='simpleList' border='1' cellspacing='0' cellpadding='5' rules='rows' ><tr><th>角色</th><th>卡牌iid</th><th>卡牌数量</th><th>绑定数量</th></tr>
 <?php 
 require '../utils/dbTcgUtils.php';
   $strsql="SELECT info from role where 1=1 ";
@@ -300,6 +322,31 @@ require '../utils/dbTcgUtils.php';
 					}else{
 						echo "0";
 					}
+						
+			?>
+	</td><td>
+	<?php
+	
+					$a1= strpos($row[$i],"['binding_cards']=");
+					//echo $a1;
+					$t1= substr($row[$i],$a1);
+					//echo $t1;
+					$a2= strpos($t1,"}");
+					//echo $a2;
+					$t2= substr($t1,0,$a2+1);
+					//echo $t2;
+					$len = strlen("[".$_POST["card_iid"]."]=");
+					$start  = strpos($t2,"[".$_POST["card_iid"]."]=");
+					if($start>0){
+						$subs = substr($t2,$start+$len);				
+						$end  = strpos($subs,",");
+						echo substr($subs,0,$end);
+						$count = $count- substr($subs,0,$end);
+					}else{
+						echo "0";
+					}
+						
+	
 					?>
 			</td>
 	<?php
@@ -315,7 +362,7 @@ require '../utils/dbTcgUtils.php';
 	mysql_close($tcgconn);
 	?>
 </table>
-丢失数据<font color = "red">（公式:基础数量+剩余数量-现有数量-GM操作数量）</font>
+丢失数据<font color = "red">（公式:基础数量(包含绑定)+剩余数量-现有数量(包含绑定)-GM操作数量）</font>
 <table id='tab4' class='simpleList' border='1' cellspacing='0' cellpadding='5' rules='rows' >
 <tr><td><?php echo $count;?></td></tr>
 </table>
