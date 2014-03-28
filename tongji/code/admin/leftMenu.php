@@ -23,7 +23,7 @@ function showDiv(div){
 </div>
 </ul>
 
-<ul><a href="#" onClick="showDiv('div2');">访问</a>
+<ul><a href="#" onClick="showDiv('div2');">访问数据</a>
 <div id="div2" style="display:none;margin-left:10px;">
 <li><a href="#"  onClick="showDiv('li1');">访问统计</a></li>
 	<div id="li1" style="display:none;margin-left:10px;">
@@ -36,7 +36,7 @@ function showDiv(div){
 </div>
 </ul>
 
-<ul><a href="#" onClick="showDiv('div3');">事件</a>
+<ul><a href="#" onClick="showDiv('div3');">事件数据</a>
 <div id="div3" style="display:none;margin-left:10px;">
 <li><a href="#"  onClick="showDiv('li2');">事件统计</a></li>
 <div id="li2" style="display:none;margin-left:10px;">
@@ -47,6 +47,11 @@ function showDiv(div){
 	</div>
 <li><a href="event/detail.php?project_code=<?php echo $project_code;?>" target="mainFrame">事件明细</a></li>
 </div>
+</ul>
+
+<ul><a href="#" onClick="showDiv('div4');">统计报表</a>
+<div id="div4" style="display:none;margin-left:10px;">
+<li><a href="report/total.php?project_code=<?php echo $project_code;?>" target="mainFrame">总汇总</a></li>
 </ul>
 </body>
 </html>
