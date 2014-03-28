@@ -1,12 +1,13 @@
-document.write(document.referrer); 
-var referrer = document.referrer;
-document.cookie="comefrom="+referrer;  //设置COOKIE
-var host = window.location.host;
-var project = "cainiao";
+var gbitstj = {
+		referrer:document.referrer,
+		host:window.location.host, 
+		url:document.domain,
+		locationhref:window.location.href,
+		project:"cainiao"
+}
+document.cookie="comefrom="+gbitstj.referrer;  //设置COOKIE
 
-var url=document.domain;
-var locationhref = window.location.href;
-var d="referrer="+referrer+"&locationhref="+locationhref+"&type=in&project="+project;
+var d="referrer="+gbitstj.referrer+"&locationhref="+gbitstj.locationhref+"&type=in&project="+gbitstj.project;
 var id;
 $.ajax({
 	type:'POST',
@@ -21,9 +22,6 @@ $.ajax({
 		//alert(id);
 	}
 });
-
-
-
 
 var start;  
 var end;  
@@ -53,7 +51,7 @@ $(document).ready(function() {//用户页面加载完毕，这个是jquery初始
 
 
 function push_event(eventName,eventParam){
-	var d="referrer="+referrer+"&locationhref="+locationhref+"&project="+project+"&eventName="+eventName+"&eventParam="+eventParam;
+	var d="referrer="+gbitstj.referrer+"&locationhref="+gbitstj.locationhref+"&project="+gbitstj.project+"&eventName="+eventName+"&eventParam="+eventParam;
 
 	alert(d);
 	$.ajax({
