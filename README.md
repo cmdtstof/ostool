@@ -1,6 +1,8 @@
 # ostool
 this code was Automatically exported from code.google.com/p/ostool (17.3.15/cm)
 
+##How can SMOs meet the compliance requirements and use their knowledge base?
+
 ###Central metadata repository for unstructured data supports records and knowledge management for small and medium-sized organisations.
 
 Ostool is a central metadata repository for unstructured data. The tool enables small and medium-sized organizations (SMO) to manage its business- and knowledge-related documents on a low-tech IT environment. The filing is synchronized with the Ostool. The necessary metadata for the information lifecycle management are kept in the Ostool and provide a Records Management. Completed cases / projects can be appraised and delivered to a long-term archive automatically.
